@@ -76,6 +76,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD75E03E20AB5A9800762B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD75E03F20AB5AA500762B50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD75E04120AB5AB300762B50 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD75E04020AB5AA900762B50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA20402092A578008C932F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD75E04120AB5AB300762B50 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA20422092A578008C932F /* Main.storyboard */,
+				FDDA204A2092A57C008C932F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FD75E04220AB5ACA00762B50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA204D2092A57C008C932F /* Info.plist */,
+				FDDA20482092A57C008C932F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FDDA20322092A578008C932F = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				FDDA203E2092A578008C932F /* AppDelegate.swift */,
-				FDDA20402092A578008C932F /* ViewController.swift */,
-				FDDA20422092A578008C932F /* Main.storyboard */,
-				FDDA20482092A57C008C932F /* Assets.xcassets */,
-				FDDA204A2092A57C008C932F /* LaunchScreen.storyboard */,
-				FDDA204D2092A57C008C932F /* Info.plist */,
-				FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */,
+				FD75E04220AB5ACA00762B50 /* Resources */,
+				FD75E03E20AB5A9800762B50 /* Model */,
+				FD75E03F20AB5AA500762B50 /* View */,
+				FD75E04020AB5AA900762B50 /* Controller */,
 			);
 			path = MatWebUnB;
 			sourceTree = "<group>";
