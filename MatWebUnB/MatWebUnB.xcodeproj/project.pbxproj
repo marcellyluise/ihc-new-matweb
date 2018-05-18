@@ -76,13 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		887FFFFF20AF0B7D006133A8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		FDDA20322092A578008C932F = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +99,6 @@
 		FDDA203D2092A578008C932F /* MatWebUnB */ = {
 			isa = PBXGroup;
 			children = (
-				887FFFFF20AF0B7D006133A8 /* Model */,
 				FDDA203E2092A578008C932F /* AppDelegate.swift */,
 				FDDA20402092A578008C932F /* ViewController.swift */,
 				FDDA20422092A578008C932F /* Main.storyboard */,
