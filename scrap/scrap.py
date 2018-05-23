@@ -1,39 +1,90 @@
 # import libraries
 from urllib.request import urlopen
-import json
-import codecs
 from bs4 import BeautifulSoup
+from selenium import webdriver
+import codecs
+import random
+import jsonCreate as jc
+import convertValues as cv
 
-
+browser = webdriver.PhantomJS()
 campiJSON = []
 cursoJSON = []
 curriculoJSON = []
 departJSON = []
+materiaJSON = []
+depCOD = 1000
 
-def regexPreReq(field):
-    finalReqs = []
-    reqs = []
-    for req in field.find_all('strong'):
-        t = req.text.strip()
-        if t:
-            if t == "OU":
-                finalReqs.append(reqs)
-                reqs = []
-            elif t == "E":
-                continue
-            else:
-                lnumber = int(t)
-                reqs.append(lnumber)
-    finalReqs.append(reqs)
-    return finalReqs
+def getSoup(urlExt):
+    url = 'https://matriculaweb.unb.br/graduacao/' + urlExt
+    print(url)
+    basePage = urlopen(url)
+    return BeautifulSoup(basePage, 'html.parser')
 
-def nivelToInt(nivel):
-    if nivel == "Graduação":
-        return 0
-    elif nivel == "Mestrado":
-        return 1
-    else:
-        return 2
+def scrapOferta(page):
+    ofertaJSON = []
+    campusCode = 1
+    ofertaUrl = page.find('a', attrs={'class': 'btn bg-blue waves-effect'})
+    ofertaUrl = ofertaUrl.get('href')[11:]
+    url = 'https://matriculaweb.unb.br/graduacao/' + ofertaUrl
+    browser.get(url)
+    page = BeautifulSoup(browser.page_source, "html.parser")
+    divs = page.find_all('div', attrs = {'class': ['table-responsive', 'panel panel-primary']})
+    if divs:
+        divs.pop(0)
+        divs.pop()
+        for div in divs:
+            if div.get('class')[0] == 'panel':
+                campusCode = cv.campusToInt(div.find('h4').text)
+            elif div.get('class')[0] == 'table-responsive':
+                body = div.find('tbody')
+                subTabelas = body.find('tr')
+                tabelas = subTabelas.find_all('td', recursive=False)
+                dias = tabelas[3].find_all('td')
+                i = 0
+                diasJSON = []
+                while i < len(dias):
+                    diaSemana = dias[i].text
+                    i+=1
+                    horaIni = dias[i].text
+                    i+=1
+                    horaFim = dias[i].text
+                    i+=3
+                    diasJSON.append(jc.createDataJSON(diaSemana, horaIni, horaFim))
+
+
+                turma = tabelas[0].find('td', attrs={'class': 'turma'}).text
+                vagas = int(tabelas[1].find('span').text)
+                turno = tabelas[2].find('td', attrs={'colspan': '2'}).text
+                vagasOcup = random.randint(1,vagas+1)
+                vagasRest = vagas - vagasOcup
+
+                profs = []
+                for prof in tabelas[4].find_all('td'):
+                    profs.append(prof.text)
+
+                ofertaJSON.append(jc.createOfertaJSON(turma, vagas, cv.turnoToInt(turno), vagasOcup, vagasRest, profs, diasJSON, campusCode))
+        return ofertaJSON
+    else :
+        return []
+
+def scrapFluxo(page):
+    periodoJSON = []
+    tables = page.find_all('table', attrs={'id': 'datatable'})
+    for table in tables:
+        head = table.find('thead')
+        headRows = head.find_all('th')
+        codPeriodo = int(headRows[1].text)
+        credPeriodo = int(headRows[3].text)
+        bodyRows = table.find_all('tr')
+        bodyRows.pop(0)
+        bodyRows.pop(0)
+        materias = []
+        for row in bodyRows:
+            field = row.find_all('td')
+            materias.append(int(field[3].text))
+        periodoJSON.append(jc.createPeriodoJSON(codPeriodo, credPeriodo, materias))
+    return periodoJSON
 
 def scrapCampus(campi):
     campiUrls = []
@@ -47,60 +98,92 @@ def scrapCampus(campi):
     for campusUrl in campiUrls:
         cursos = getSoup(campusUrl)
         cursosCampus = scrapCursos(cursos, idCampus)
-        campiJSON.append(createCampusJSON(idCampus, campiNomes[idCampus-1], cursosCampus))
+        campiJSON.append(jc.createCampusJSON(idCampus, campiNomes[idCampus-1], cursosCampus))
         idCampus+=1
 
-def scrapMateriaInfo(materia):
+def scrapMateriaInfo(materia, campusId):
+    global depCOD
     table = materia.find('table', attrs={'id': 'datatable'})
-    matInfo = []
+    if table:
+        depNome = ""
+        depSigla = ""
+        text = table.find_all('p')
+        rows = table.find_all('tr')
+        aux = rows[0].find('a')
+        if aux:
+            depNome = aux.text
+            depSigla = aux.get('small').text.split()
+        else:
+            depSigla = rows[0].td.text.split()[0]
+            depNome = rows[0].td.text[len(depSigla)+1:]
 
-    rows = table.find_all('tr')
-    depName = rows[0].td.text.split()[0]
-    cod = rows[1].td.text
-    nome = rows[2].td.text
-    nivel = nivelToInt(rows[3].td.text)
-    vigencia = rows[4].td.text
-    preReqs = regexPreReq(rows[5].td)
+        dep = filter(lambda dep: dep['sigla'] == depSigla, departJSON)
+        dep = list(dep)
+        depCode = 0
+        if (len(dep) == 0):
+            departJSON.append(jc.createDepartJSON(depCOD, depNome, depSigla, 1))
+            depCode = depCOD
+            depCOD += 1
+        else:
+            depCode = dep[0]
+            depCode = depCode['id']
+        nivel = cv.nivelToInt(rows[3].td.text)
+        vigencia = rows[4].td.text
+        preReqs = cv.regexPreReq(rows[5].td)
+        ementa = ""
+        biblio = ""
+        programa = ""
 
-    # for rows in table.find_all('tr'):
-    #     matInfo.append(rows.td.text)
-    # print(matInfo[0].split()[0])
-    # print(matInfo[1])
-    # print(matInfo[2])
-    # print(matInfo[3])
-    # print(matInfo[4])
-    #
-    # print(matInfo[5])
-    # preReq = [int(s) for s in matInfo[5].split() if s.isdigit()]
-    # print(preReq)
-    #
-    #
-    # print(matInfo[6])
-    # print(matInfo[7])
-    # print(matInfo[8])
-    # print(matInfo[9])
+        for i in range(6, len(rows)):
+            if rows[i].th.text == "Ementa":
+                ementa = cv.htmlTextToString(text[i-6])
+            elif rows[i].th.text == "Bibliografia":
+                biblio = cv.htmlTextToString(text[i-6])
+            elif rows[i].th.text == "Programa":
+                programa = cv.htmlTextToString(text[i-6])
 
-def scrapMateria(materias):
+        return depCode, nivel, vigencia, preReqs, ementa, biblio, programa
+    else:
+        return []
+
+
+def scrapMateria(materias, campusId):
     table = materias.find_all('table', attrs={'id': 'datatable'})
     i = 1
+    obgTable = True
+    materiasObg = []
+    materiasOpt = []
     while i != len(table):
+        if i == len(table)-1:
+            obgTable = False
+
         for rows in table[i].find_all('tr'):
             row = rows.find_all('td')
             if len(row) > 0:
                 id = int(row[0].text)
-                nome = row[1].text
-                creds = row[2].text.split()
-                credTeor = int(creds[0])
-                credPratic = int(creds[1])
-                credExt= int(creds[2])
-                credEstudos = int(creds[3])
-                url = row[1].find('a')
-                url = url.get('href')[11:]
-                materiaInfo = getSoup(url)
-                matInfo = scrapMateriaInfo(materiaInfo)
-                # url = url.get('href')
-                # print(url)
+                if obgTable == True:
+                    materiasObg.append(id)
+                else:
+                    materiasOpt.append(id)
+
+                if not any(d['id'] == id for d in materiaJSON):
+                    nome = row[1].text
+                    creds = row[2].text.split()
+                    credTeor = int(creds[0])
+                    credPratic = int(creds[1])
+                    credExt= int(creds[2])
+                    credEstudos = int(creds[3])
+                    url = row[1].find('a')
+                    url = url.get('href')[11:]
+                    materiaInfo = getSoup(url)
+                    matInfo = scrapMateriaInfo(materiaInfo, campusId)
+                    oferta  = scrapOferta(materiaInfo)
+                    if len(matInfo) > 0:
+                        materiaJSON.append(jc.createMateriaJSON(id, nome, credTeor, credPratic, credExt, credEstudos, matInfo, oferta))
+                        materiaJSON.sort(key=lambda k: k['id'])
+
         i += 1
+    return materiasObg, materiasOpt
 
 
 def scrapCInfo(materias):
@@ -130,12 +213,12 @@ def scrapDepart(campi):
             cod = int(rows[0].text)
             sigla = rows[1].text
             nome = rows[2].text
-            departJSON.append(createDepartJSON(cod, nome, sigla, idCampus))
+            departJSON.append(jc.createDepartJSON(cod, nome, sigla, idCampus))
         idCampus+=1
 
 
 # Retira as informacoes de curriculos
-def scrapCurriculo(curso):
+def scrapCurriculo(curso, campusId):
     # Inicializa a lista de id vazias
     curriculosID = []
     index = 0
@@ -150,8 +233,8 @@ def scrapCurriculo(curso):
             # Armazena o id dos curriculos
             curriculosID.append(int(header.small.text))
 
-        for fluxoUrl in curso.find_all('a', attrs={'class':'btn bg-blue waves-effect btn-sm'}):
-            print(fluxoUrl.get('href'))
+        curiculoUrl = curso.find_all('a', attrs={'class':'btn bg-blue waves-effect btn-sm m-l-10'})
+        fluxoUrl = curso.find_all('a', attrs={'class':'btn bg-blue waves-effect btn-sm'})
 
         # Para cada curriculo vai percorrer a tabela
         for table in curso.find_all('table', attrs={'id': 'datatable'}):
@@ -161,14 +244,16 @@ def scrapCurriculo(curso):
             for row in table.find_all('tr'):
                 curriculoInfo.append(row.td.text)
 
-            curiculoUrl = curso.find_all('a', attrs={'class':'btn bg-blue waves-effect btn-sm m-l-10'})
-            newUrl = curiculoUrl[index].get('href')[2:]
-            curiculoPage = getSoup(newUrl)
+
+            curiculoPage = getSoup(curiculoUrl[index].get('href')[2:])
             moreInfo = scrapCInfo(curiculoPage)
-            scrapMateria(curiculoPage)
+            matObg, matOpt = scrapMateria(curiculoPage, campusId)
+
+            fluxoPage = getSoup(fluxoUrl[index].get('href')[2:])
+            periodos = scrapFluxo(fluxoPage)
 
             #Adiciona o curriculo na lista de curriculos
-            curriculoJSON.append(createCurriculoJSON(curriculosID[index], curriculoInfo, moreInfo, cursoId))
+            curriculoJSON.append(jc.createCurriculoJSON(curriculosID[index], curriculoInfo, moreInfo, cursoId, periodos, matObg, matOpt))
             index += 1
         # Retorna o id do curso e dos respectivos curriculos
         return curriculosID
@@ -187,73 +272,36 @@ def scrapCursos(cursos, idCampus):
     for rows in table.find_all('tr'):
         rows = rows.find_all('td')
         if len(rows) > 0:
-            modalidade = modalidadeToInt(rows[0].text)
+            modalidade = cv.modalidadeToInt(rows[0].text)
             cursoId = int(rows[1].text)
-            turno = turnoToInt(rows[3].text)
+            turno = cv.turnoToInt(rows[3].text)
             nome = rows[2].find('a')
             # Pega o link da pagina do curso
             cursoHref = nome.get('href')
             curso = getSoup(cursoHref)
-            curriculosID = scrapCurriculo(curso)
+            curriculosID = scrapCurriculo(curso, idCampus)
             if len(curriculosID) > 0:
-                cursoJSON.append(createCursoJSON(nome.text, modalidade, turno, cursoId, idCampus, curriculosID))
+                cursoJSON.append(jc.createCursoJSON(idCampus, modalidade, turno, cursoId, nome.text, curriculosID))
                 cursosCampus.append(cursoId)
     return cursosCampus
 
-def grauToInt(grau):
-    if grau == "Bacharel":
-        return 0
-    elif grau == "Licenciatura":
-        return 1
+if __name__== "__main__":
+    mainPage = getSoup('')
+    campi = mainPage.find_all('ul', attrs={'class': 'ml-menu'})
+    scrapDepart(campi[1])
+    scrapCampus(campi[0])
 
-def modalidadeToInt(grau):
-    if grau == "Presencial":
-        return 0
-    elif grau == "Distância":
-        return 1
+    departsJSON = jc.createEntitiesJSON('departamentos', departJSON)
+    jc.createJsonFile("departs", departsJSON)
 
-def turnoToInt(grau):
-    if grau == "Diurno":
-        return 0
-    elif grau == "Noturno":
-        return 1
+    curriculosJSON = jc.createEntitiesJSON('curriculos', curriculoJSON)
+    jc.createJsonFile("curriculos", curriculosJSON)
 
+    campiJSON = jc.createEntitiesJSON('campi', campiJSON)
+    jc.createJsonFile("campi", campiJSON)
 
-def createEntitiesJSON(name, dict):
-    jsonEnt = {name: dict}
-    return json.dumps(jsonEnt, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
+    cursosJSON = jc.createEntitiesJSON('cursos', cursoJSON)
+    jc.createJsonFile("cursos", cursosJSON)
 
-def createCurriculoJSON(id, infos, moreInfo, curso):
-    return {'id': id, 'grau':grauToInt(infos[0]), 'permMin': infos[1], 'permMax': infos[2], 'qtdCredForm': infos[3], 'qtdMinCredOptConc': infos[4], 'qtdMinCredOptConex': infos[5], 'qtdMaxMdlLivre': infos[6], 'qtdMinHorasComp': infos[7], 'qtdMaxHorasIntComp': infos[8], 'qtdMinHorasExt': infos[9], 'qtdMaxIntHorasExt': infos[10], 'minCredPer': moreInfo[0], 'maxCredPer': moreInfo[1], 'minLimPermSem': moreInfo[2], 'maxLimPermSem': moreInfo[3]}
-
-def createDepartJSON(id, name, sigla, idCampus):
-    return {'id': id, 'name': name, 'campus': idCampus, 'sigla': sigla}
-
-def createCursoJSON(id, m, t, name, idCampus, curriculos):
-    return {'id': id, 'name': name, 'campus': idCampus, 'curriculos': curriculos, 'modalidade': m, 'turno': t}
-
-def createCampusJSON(id, name, cursos):
-    return {'id': id, 'name': name, 'cursos': cursos}
-
-def getSoup(urlExt):
-    url = 'https://matriculaweb.unb.br/graduacao/' + urlExt
-    print(url)
-    basePage = urlopen(url)
-    return BeautifulSoup(basePage, 'html.parser')
-
-
-
-mainPage = getSoup('')
-campi = mainPage.find_all('ul', attrs={'class': 'ml-menu'})
-scrapDepart(campi[1])
-scrapCampus(campi[0])
-
-print(type(departJSON))
-# departsJSON = createEntitiesJSON('departamentos', departJSON)
-# print(departsJSON)
-# curriculosJSON = createEntitiesJSON('curriculos', curriculoJSON)
-# print(curriculosJSON)
-# campiJSON = createEntitiesJSON('campi', campiJSON)
-# print(campiJSON)
-# cursosJSON = createEntitiesJSON('cursos', cursoJSON)
-# print(cursosJSON)
+    materiasJSON = jc.createEntitiesJSON('materias', materiaJSON)
+    jc.createJsonFile("materias", materiasJSON)
