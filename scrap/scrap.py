@@ -1,11 +1,13 @@
 # import libraries
 from urllib.request import urlopen
+from urllib.error import URLError
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import codecs
 import random
 import jsonCreate as jc
 import convertValues as cv
+from retry_decorator import retry
 
 browser = webdriver.PhantomJS()
 campiJSON = []
@@ -15,10 +17,18 @@ departJSON = []
 materiaJSON = []
 depCOD = 1000
 
+@retry(URLError, tries=10, delay=1, backoff=2)
+def url_retry(url):
+    return urlopen(url)
+
+@retry(URLError, tries=10, delay=1, backoff=2)
+def browser_retry(url):
+    browser.get(url)
+
 def getSoup(urlExt):
     url = 'https://matriculaweb.unb.br/graduacao/' + urlExt
     print(url)
-    basePage = urlopen(url)
+    basePage = url_retry(url)
     return BeautifulSoup(basePage, 'html.parser')
 
 def scrapOferta(page):
@@ -27,7 +37,7 @@ def scrapOferta(page):
     ofertaUrl = page.find('a', attrs={'class': 'btn bg-blue waves-effect'})
     ofertaUrl = ofertaUrl.get('href')[11:]
     url = 'https://matriculaweb.unb.br/graduacao/' + ofertaUrl
-    browser.get(url)
+    browser_retry(url)
     page = BeautifulSoup(browser.page_source, "html.parser")
     divs = page.find_all('div', attrs = {'class': ['table-responsive', 'panel panel-primary']})
     if divs:
