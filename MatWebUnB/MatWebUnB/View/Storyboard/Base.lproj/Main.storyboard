@@ -9,50 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Storyboard Reference-->
+        <!--Feed-->
         <scene sceneID="5LM-9n-DA3">
             <objects>
-                <viewControllerPlaceholder id="gJd-H7-bJg" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Feed" id="gJd-H7-bJg" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vm3-Km-Nty"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9U-to-yKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1551" y="751"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Campus-->
         <scene sceneID="Fjl-PO-4Lz">
             <objects>
-                <viewControllerPlaceholder id="cKO-Xx-Y7O" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Campus" id="cKO-Xx-Y7O" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="y5H-HJ-LfJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2W-2U-par" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-588" y="751"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Search-->
         <scene sceneID="Yr4-qX-YhF">
             <objects>
-                <viewControllerPlaceholder id="WuW-nt-dPW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Search" id="WuW-nt-dPW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1Bs-Oh-nz7"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEe-NA-8oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="385" y="751"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Profile-->
         <scene sceneID="n5C-lP-mXO">
             <objects>
-                <viewControllerPlaceholder id="Yok-0z-we7" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Profile" id="Yok-0z-we7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="IZa-YY-B8A"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYX-hY-GP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2438" y="751"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Registration-->
         <scene sceneID="kK8-W8-JNm">
             <objects>
-                <viewControllerPlaceholder id="Qif-tt-Mw3" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Registration" id="Qif-tt-Mw3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vpq-U7-1lV"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36e-tV-IOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,7 +83,7 @@
         <!--Feed-->
         <scene sceneID="ZEY-f3-dmW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4oa-f0-vFE" sceneMemberID="viewController">
+                <navigationController title="Feed" automaticallyAdjustsScrollViewInsets="NO" id="4oa-f0-vFE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feed" id="dkr-YL-GKD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XJX-MN-e9h">
@@ -102,7 +102,7 @@
         <!--Campus-->
         <scene sceneID="Zt5-Py-A75">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8vw-ZG-PU0" sceneMemberID="viewController">
+                <navigationController title="Campus" automaticallyAdjustsScrollViewInsets="NO" id="8vw-ZG-PU0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Campus" id="IZW-pg-Cg2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rjb-Kx-vsy">
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="-588" y="222"/>
         </scene>
-        <!--Busca-->
+        <!--Search-->
         <scene sceneID="pC7-bq-RsY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QUS-Wu-OQA" sceneMemberID="viewController">
+                <navigationController title="Search" automaticallyAdjustsScrollViewInsets="NO" id="QUS-Wu-OQA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Busca" id="gTj-FK-hBm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p0X-6z-14R">
@@ -140,7 +140,7 @@
         <!--Matrícula-->
         <scene sceneID="wDo-n7-s54">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ipX-V9-AmL" sceneMemberID="viewController">
+                <navigationController title="Matrícula" automaticallyAdjustsScrollViewInsets="NO" id="ipX-V9-AmL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Matrícula" id="jwz-L4-tIe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6pf-pk-9Xc">
@@ -159,7 +159,7 @@
         <!--Perfil-->
         <scene sceneID="YE6-0W-aMP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="no4-5B-6xT" sceneMemberID="viewController">
+                <navigationController title="Perfil" automaticallyAdjustsScrollViewInsets="NO" id="no4-5B-6xT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Perfil" id="Hmf-Ar-aqd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cgR-62-XSu">
