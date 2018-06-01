@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Matrícula-->
         <scene sceneID="OR7-PF-6Zd">
             <objects>
-                <viewController id="icq-Hd-AL7" sceneMemberID="viewController">
+                <viewController title="Matrícula" id="icq-Hd-AL7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oLh-ZC-V5Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
