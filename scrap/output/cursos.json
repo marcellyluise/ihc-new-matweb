@@ -1,0 +1,1182 @@
+{
+    "cursos": [
+        {
+            "campus": "ADMINISTRAÇÃO",
+            "curriculos": [
+                8117
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 19,
+            "turno": 0
+        },
+        {
+            "campus": "ADMINISTRAÇÃO",
+            "curriculos": [
+                8150
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 701,
+            "turno": 1
+        },
+        {
+            "campus": "AGRONOMIA",
+            "curriculos": [
+                6165
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 86,
+            "turno": 0
+        },
+        {
+            "campus": "ARQUITETURA E URBANISMO",
+            "curriculos": [
+                5126
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 27,
+            "turno": 0
+        },
+        {
+            "campus": "ARQUITETURA E URBANISMO",
+            "curriculos": [
+                5673
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1422,
+            "turno": 1
+        },
+        {
+            "campus": "ARQUIVOLOGIA",
+            "curriculos": [
+                8192
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 728,
+            "turno": 1
+        },
+        {
+            "campus": "ARTES CÊNICAS",
+            "curriculos": [
+                5711,
+                5371
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 680,
+            "turno": 0
+        },
+        {
+            "campus": "ARTES CÊNICAS",
+            "curriculos": [
+                5720
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1309,
+            "turno": 1
+        },
+        {
+            "campus": "ARTES VISUAIS",
+            "curriculos": [
+                5649,
+                5657
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 671,
+            "turno": 0
+        },
+        {
+            "campus": "ARTES VISUAIS",
+            "curriculos": [
+                5665
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1023,
+            "turno": 1
+        },
+        {
+            "campus": "BIBLIOTECONOMIA",
+            "curriculos": [
+                8222
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 191,
+            "turno": 0
+        },
+        {
+            "campus": "BIOTECNOLOGIA",
+            "curriculos": [
+                2771
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1538,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIA DA COMPUTAÇÃO",
+            "curriculos": [
+                1856
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 370,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIA POLÍTICA",
+            "curriculos": [
+                8591
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 710,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS AMBIENTAIS",
+            "curriculos": [
+                2321
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1333,
+            "turno": 1
+        },
+        {
+            "campus": "CIÊNCIAS BIOLÓGICAS",
+            "curriculos": [
+                2216
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 94,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS BIOLÓGICAS",
+            "curriculos": [
+                2259
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 736,
+            "turno": 1
+        },
+        {
+            "campus": "CIÊNCIAS CONTÁBEIS",
+            "curriculos": [
+                8516
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 507,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS CONTÁBEIS",
+            "curriculos": [
+                8583
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 809,
+            "turno": 1
+        },
+        {
+            "campus": "CIÊNCIAS ECONÔMICAS",
+            "curriculos": [
+                3221
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 35,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS SOCIAIS",
+            "curriculos": [
+                3131,
+                3115,
+                3166,
+                3123
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 213,
+            "turno": 0
+        },
+        {
+            "campus": "COMPUTAÇÃO",
+            "curriculos": [
+                1899
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 906,
+            "turno": 1
+        },
+        {
+            "campus": "COMUNICAÇÃO SOCIAL",
+            "curriculos": [
+                8354,
+                8338
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 205,
+            "turno": 0
+        },
+        {
+            "campus": "COMUNICAÇÃO SOCIAL",
+            "curriculos": [
+                8362
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1473,
+            "turno": 1
+        },
+        {
+            "campus": "DESIGN",
+            "curriculos": [
+                5380,
+                5398
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 698,
+            "turno": 0
+        },
+        {
+            "campus": "DIREITO",
+            "curriculos": [
+                8486
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 43,
+            "turno": 0
+        },
+        {
+            "campus": "DIREITO",
+            "curriculos": [
+                8885
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 817,
+            "turno": 1
+        },
+        {
+            "campus": "EDUCAÇÃO FÍSICA",
+            "curriculos": [
+                7315
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 329,
+            "turno": 0
+        },
+        {
+            "campus": "EDUCAÇÃO FÍSICA",
+            "curriculos": [
+                60810
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1589,
+            "turno": 0
+        },
+        {
+            "campus": "ENFERMAGEM",
+            "curriculos": [
+                7412
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 442,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA AMBIENTAL",
+            "curriculos": [
+                6254
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1457,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA CIVIL",
+            "curriculos": [
+                6220
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 582,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA DE COMPUTAÇÃO",
+            "curriculos": [
+                1741
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1341,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA DE PRODUÇÃO",
+            "curriculos": [
+                6017
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1376,
+            "turno": 1
+        },
+        {
+            "campus": "ENGENHARIA DE REDES DE COMUNICAÇÃO",
+            "curriculos": [
+                6351
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 892,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA ELÉTRICA",
+            "curriculos": [
+                6335
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 591,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA FLORESTAL",
+            "curriculos": [
+                6521
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 396,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA MECÂNICA",
+            "curriculos": [
+                6424
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 604,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA MECATRÔNICA",
+            "curriculos": [
+                6912
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 949,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA QUÍMICA",
+            "curriculos": [
+                60844
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1562,
+            "turno": 0
+        },
+        {
+            "campus": "ESTATÍSTICA",
+            "curriculos": [
+                1716
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 353,
+            "turno": 0
+        },
+        {
+            "campus": "FARMÁCIA",
+            "curriculos": [
+                7692
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 876,
+            "turno": 0
+        },
+        {
+            "campus": "FARMÁCIA",
+            "curriculos": [
+                7609
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1449,
+            "turno": 1
+        },
+        {
+            "campus": "FILOSOFIA",
+            "curriculos": [
+                3336,
+                3344
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 221,
+            "turno": 0
+        },
+        {
+            "campus": "FILOSOFIA",
+            "curriculos": [
+                3352
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1503,
+            "turno": 1
+        },
+        {
+            "campus": "FÍSICA",
+            "curriculos": [
+                1112
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 124,
+            "turno": 0
+        },
+        {
+            "campus": "FÍSICA",
+            "curriculos": [
+                1147
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 744,
+            "turno": 1
+        },
+        {
+            "campus": "GEOFÍSICA",
+            "curriculos": [
+                1236
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1384,
+            "turno": 0
+        },
+        {
+            "campus": "GEOGRAFIA",
+            "curriculos": [
+                3841,
+                3859
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 264,
+            "turno": 0
+        },
+        {
+            "campus": "GEOLOGIA",
+            "curriculos": [
+                1228
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 132,
+            "turno": 0
+        },
+        {
+            "campus": "GESTÃO DE AGRONEGÓCIOS",
+            "curriculos": [
+                6262
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1511,
+            "turno": 1
+        },
+        {
+            "campus": "GESTÃO DE POLÍTICAS PÚBLICAS",
+            "curriculos": [
+                8184
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1350,
+            "turno": 1
+        },
+        {
+            "campus": "HISTÓRIA",
+            "curriculos": [
+                3417,
+                3425
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 230,
+            "turno": 0
+        },
+        {
+            "campus": "HISTÓRIA",
+            "curriculos": [
+                3476
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1392,
+            "turno": 1
+        },
+        {
+            "campus": "JORNALISMO",
+            "curriculos": [
+                850
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 337,
+            "turno": 0
+        },
+        {
+            "campus": "LETRAS",
+            "curriculos": [
+                4430,
+                4219,
+                4227,
+                4316,
+                4324,
+                4111,
+                4120
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 51,
+            "turno": 0
+        },
+        {
+            "campus": "LETRAS",
+            "curriculos": [
+                4146
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 779,
+            "turno": 1
+        },
+        {
+            "campus": "LETRAS",
+            "curriculos": [
+                4154
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 825,
+            "turno": 1
+        },
+        {
+            "campus": "LETRAS",
+            "curriculos": [
+                4553
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 914,
+            "turno": 1
+        },
+        {
+            "campus": "LETRAS-TRADUÇÃO",
+            "curriculos": [
+                4529,
+                4511
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 639,
+            "turno": 0
+        },
+        {
+            "campus": "LETRAS-TRADUÇÃO ESPANHOL",
+            "curriculos": [
+                4626
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1414,
+            "turno": 1
+        },
+        {
+            "campus": "LÍNGUA DE SINAIS BRASILEIRA/PORTUGUÊS COMO SEGUNDA LÍNGUA",
+            "curriculos": [
+                698
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 345,
+            "turno": 0
+        },
+        {
+            "campus": "LÍNGUAS ESTRANGEIRAS APLICADAS - MSI",
+            "curriculos": [
+                4090
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1465,
+            "turno": 0
+        },
+        {
+            "campus": "MATEMÁTICA",
+            "curriculos": [
+                1325,
+                1341
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 141,
+            "turno": 0
+        },
+        {
+            "campus": "MATEMÁTICA",
+            "curriculos": [
+                1368
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 752,
+            "turno": 1
+        },
+        {
+            "campus": "MEDICINA",
+            "curriculos": [
+                7111
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 159,
+            "turno": 0
+        },
+        {
+            "campus": "MEDICINA VETERINÁRIA",
+            "curriculos": [
+                6181
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 884,
+            "turno": 0
+        },
+        {
+            "campus": "MUSEOLOGIA",
+            "curriculos": [
+                8265
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1368,
+            "turno": 0
+        },
+        {
+            "campus": "MÚSICA",
+            "curriculos": [
+                5223,
+                5541,
+                5614,
+                5266,
+                5576,
+                5584,
+                5550,
+                5592,
+                5622,
+                5274,
+                5631,
+                5568,
+                5258,
+                5525,
+                5282,
+                5517,
+                5533
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 175,
+            "turno": 0
+        },
+        {
+            "campus": "MÚSICA",
+            "curriculos": [
+                434
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 281,
+            "turno": 0
+        },
+        {
+            "campus": "MÚSICA",
+            "curriculos": [
+                5606
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1406,
+            "turno": 1
+        },
+        {
+            "campus": "NUTRIÇÃO",
+            "curriculos": [
+                7510
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 451,
+            "turno": 0
+        },
+        {
+            "campus": "ODONTOLOGIA",
+            "curriculos": [
+                7218
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 647,
+            "turno": 0
+        },
+        {
+            "campus": "PEDAGOGIA",
+            "curriculos": [
+                9229
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 60,
+            "turno": 0
+        },
+        {
+            "campus": "PEDAGOGIA",
+            "curriculos": [
+                9245
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 787,
+            "turno": 1
+        },
+        {
+            "campus": "PSICOLOGIA",
+            "curriculos": [
+                2712,
+                2721,
+                2739
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 183,
+            "turno": 0
+        },
+        {
+            "campus": "QUÍMICA",
+            "curriculos": [
+                1449
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 167,
+            "turno": 0
+        },
+        {
+            "campus": "QUÍMICA",
+            "curriculos": [
+                1503
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 761,
+            "turno": 1
+        },
+        {
+            "campus": "QUÍMICA TECNOLÓGICA",
+            "curriculos": [
+                1589
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1481,
+            "turno": 0
+        },
+        {
+            "campus": "RELAÇÕES INTERNACIONAIS",
+            "curriculos": [
+                3727
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 400,
+            "turno": 0
+        },
+        {
+            "campus": "SAÚDE COLETIVA",
+            "curriculos": [
+                7161
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1431,
+            "turno": 1
+        },
+        {
+            "campus": "SERVIÇO SOCIAL",
+            "curriculos": [
+                3514
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 272,
+            "turno": 0
+        },
+        {
+            "campus": "SERVIÇO SOCIAL",
+            "curriculos": [
+                3522
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1490,
+            "turno": 1
+        },
+        {
+            "campus": "TEORIA, CRÍTICA E HISTÓRIA DA ARTE",
+            "curriculos": [
+                60828
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1554,
+            "turno": 1
+        },
+        {
+            "campus": "TURISMO",
+            "curriculos": [
+                6271
+            ],
+            "id": 1,
+            "modalidade": 0,
+            "name": 1520,
+            "turno": 0
+        },
+        {
+            "campus": "ADMINISTRAÇÃO",
+            "curriculos": [
+                8176
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1112,
+            "turno": 0
+        },
+        {
+            "campus": "ADMINISTRAÇÃO PÚBLICA",
+            "curriculos": [
+                8087
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1546,
+            "turno": 0
+        },
+        {
+            "campus": "ARTES VISUAIS",
+            "curriculos": [
+                4936
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1155,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS BIOLÓGICAS",
+            "curriculos": [
+                2313
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1325,
+            "turno": 0
+        },
+        {
+            "campus": "EDUCAÇÃO FÍSICA",
+            "curriculos": [
+                7323
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1163,
+            "turno": 0
+        },
+        {
+            "campus": "FÍSICA",
+            "curriculos": [
+                931
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 388,
+            "turno": 0
+        },
+        {
+            "campus": "GEOGRAFIA",
+            "curriculos": [
+                3867
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1317,
+            "turno": 0
+        },
+        {
+            "campus": "LETRAS",
+            "curriculos": [
+                4910
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1147,
+            "turno": 0
+        },
+        {
+            "campus": "MÚSICA",
+            "curriculos": [
+                5509
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1139,
+            "turno": 0
+        },
+        {
+            "campus": "PEDAGOGIA",
+            "curriculos": [
+                9296
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1180,
+            "turno": 0
+        },
+        {
+            "campus": "TEATRO",
+            "curriculos": [
+                451
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 299,
+            "turno": 0
+        },
+        {
+            "campus": "TEATRO",
+            "curriculos": [
+                5151
+            ],
+            "id": 1,
+            "modalidade": 1,
+            "name": 1171,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS NATURAIS",
+            "curriculos": [
+                2283
+            ],
+            "id": 2,
+            "modalidade": 0,
+            "name": 1104,
+            "turno": 0
+        },
+        {
+            "campus": "CIÊNCIAS NATURAIS",
+            "curriculos": [
+                2291
+            ],
+            "id": 2,
+            "modalidade": 0,
+            "name": 1295,
+            "turno": 1
+        },
+        {
+            "campus": "EDUCAÇÃO DO CAMPO",
+            "curriculos": [
+                9636,
+                9628,
+                761
+            ],
+            "id": 2,
+            "modalidade": 0,
+            "name": 1121,
+            "turno": 0
+        },
+        {
+            "campus": "GESTÃO AMBIENTAL",
+            "curriculos": [
+                6157
+            ],
+            "id": 2,
+            "modalidade": 0,
+            "name": 1287,
+            "turno": 1
+        },
+        {
+            "campus": "GESTÃO DO AGRONEGÓCIO",
+            "curriculos": [
+                6190
+            ],
+            "id": 2,
+            "modalidade": 0,
+            "name": 1091,
+            "turno": 0
+        },
+        {
+            "campus": "ENFERMAGEM",
+            "curriculos": [
+                7072
+            ],
+            "id": 3,
+            "modalidade": 0,
+            "name": 1244,
+            "turno": 0
+        },
+        {
+            "campus": "FARMÁCIA",
+            "curriculos": [
+                7013
+            ],
+            "id": 3,
+            "modalidade": 0,
+            "name": 1236,
+            "turno": 0
+        },
+        {
+            "campus": "FISIOTERAPIA",
+            "curriculos": [
+                7137
+            ],
+            "id": 3,
+            "modalidade": 0,
+            "name": 1252,
+            "turno": 0
+        },
+        {
+            "campus": "FONOAUDIOLOGIA",
+            "curriculos": [
+                60852
+            ],
+            "id": 3,
+            "modalidade": 0,
+            "name": 1571,
+            "turno": 0
+        },
+        {
+            "campus": "SAÚDE COLETIVA",
+            "curriculos": [
+                7153
+            ],
+            "id": 3,
+            "modalidade": 0,
+            "name": 1279,
+            "turno": 0
+        },
+        {
+            "campus": "TERAPIA OCUPACIONAL",
+            "curriculos": [
+                7145
+            ],
+            "id": 3,
+            "modalidade": 0,
+            "name": 1261,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA",
+            "curriculos": [
+                6009
+            ],
+            "id": 4,
+            "modalidade": 0,
+            "name": 1228,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA AEROESPACIAL",
+            "curriculos": [
+                60836
+            ],
+            "id": 4,
+            "modalidade": 0,
+            "name": 1643,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA AUTOMOTIVA",
+            "curriculos": [
+                6297
+            ],
+            "id": 4,
+            "modalidade": 0,
+            "name": 1627,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA DE ENERGIA",
+            "curriculos": [
+                6289
+            ],
+            "id": 4,
+            "modalidade": 0,
+            "name": 1619,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA DE SOFTWARE",
+            "curriculos": [
+                6360
+            ],
+            "id": 4,
+            "modalidade": 0,
+            "name": 1635,
+            "turno": 0
+        },
+        {
+            "campus": "ENGENHARIA ELETRÔNICA",
+            "curriculos": [
+                6131
+            ],
+            "id": 4,
+            "modalidade": 0,
+            "name": 1601,
+            "turno": 0
+        }
+    ]
+}

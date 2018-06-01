@@ -1,0 +1,532 @@
+{
+    "departamentos": [
+        {
+            "campus": 1,
+            "id": 52,
+            "name": "Centro de Apoio ao Desenvolvimento Tecnológico",
+            "sigla": "CDT"
+        },
+        {
+            "campus": 1,
+            "id": 383,
+            "name": "Centro de Desenvolvimento Sustentável",
+            "sigla": "CDS"
+        },
+        {
+            "campus": 1,
+            "id": 25,
+            "name": "Centro de Estudos Avançados e Multidisciplinares",
+            "sigla": "CEAM"
+        },
+        {
+            "campus": 1,
+            "id": 39,
+            "name": "Centro de Excelência em Turismo",
+            "sigla": "CET"
+        },
+        {
+            "campus": 1,
+            "id": 3,
+            "name": "Decanato de Ensino de Graduação",
+            "sigla": "DEG"
+        },
+        {
+            "campus": 1,
+            "id": 4,
+            "name": "Decanato de Extensão",
+            "sigla": "DEX"
+        },
+        {
+            "campus": 1,
+            "id": 402,
+            "name": "Departamento de Administração",
+            "sigla": "ADM"
+        },
+        {
+            "campus": 1,
+            "id": 135,
+            "name": "Departamento de Antropologia",
+            "sigla": "DAN"
+        },
+        {
+            "campus": 1,
+            "id": 422,
+            "name": "Departamento de Artes Cênicas",
+            "sigla": "CEN"
+        },
+        {
+            "campus": 1,
+            "id": 421,
+            "name": "Departamento de Artes Visuais",
+            "sigla": "VIS"
+        },
+        {
+            "campus": 1,
+            "id": 432,
+            "name": "Departamento de Audiovisuais e Publicidade",
+            "sigla": "DAP"
+        },
+        {
+            "campus": 1,
+            "id": 121,
+            "name": "Departamento de Biologia Celular",
+            "sigla": "CEL"
+        },
+        {
+            "campus": 1,
+            "id": 129,
+            "name": "Departamento de Botânica",
+            "sigla": "BOT"
+        },
+        {
+            "campus": 1,
+            "id": 116,
+            "name": "Departamento de Ciência da Computação",
+            "sigla": "CIC"
+        },
+        {
+            "campus": 1,
+            "id": 125,
+            "name": "Departamento de Ciências Fisiológicas",
+            "sigla": "CFS"
+        },
+        {
+            "campus": 1,
+            "id": 424,
+            "name": "Departamento de Desenho Industrial",
+            "sigla": "DIN"
+        },
+        {
+            "campus": 1,
+            "id": 127,
+            "name": "Departamento de Ecologia",
+            "sigla": "ECL"
+        },
+        {
+            "campus": 1,
+            "id": 405,
+            "name": "Departamento de Economia",
+            "sigla": "ECO"
+        },
+        {
+            "campus": 1,
+            "id": 177,
+            "name": "Departamento de Enfermagem",
+            "sigla": "ENF"
+        },
+        {
+            "campus": 1,
+            "id": 162,
+            "name": "Departamento de Engenharia Civil e Ambiental",
+            "sigla": "ENC"
+        },
+        {
+            "campus": 1,
+            "id": 725,
+            "name": "Departamento de Engenharia de Produção",
+            "sigla": "EPR"
+        },
+        {
+            "campus": 1,
+            "id": 163,
+            "name": "Departamento de Engenharia Elétrica.",
+            "sigla": "ENE"
+        },
+        {
+            "campus": 1,
+            "id": 165,
+            "name": "Departamento de Engenharia Florestal",
+            "sigla": "EFL"
+        },
+        {
+            "campus": 1,
+            "id": 164,
+            "name": "Departamento de Engenharia Mecânica",
+            "sigla": "ENM"
+        },
+        {
+            "campus": 1,
+            "id": 115,
+            "name": "Departamento de Estatística",
+            "sigla": "EST"
+        },
+        {
+            "campus": 1,
+            "id": 352,
+            "name": "Departamento de Estudos Latino-Americanos",
+            "sigla": "ELA"
+        },
+        {
+            "campus": 1,
+            "id": 137,
+            "name": "Departamento de Filosofia",
+            "sigla": "FIL"
+        },
+        {
+            "campus": 1,
+            "id": 128,
+            "name": "Departamento de Fitopatologia",
+            "sigla": "FIT"
+        },
+        {
+            "campus": 1,
+            "id": 126,
+            "name": "Departamento de Genética e Morfologia",
+            "sigla": "GEM"
+        },
+        {
+            "campus": 1,
+            "id": 138,
+            "name": "Departamento de Geografia",
+            "sigla": "GEA"
+        },
+        {
+            "campus": 1,
+            "id": 406,
+            "name": "Departamento de Gestão de Políticas Públicas - GPP",
+            "sigla": "GPP"
+        },
+        {
+            "campus": 1,
+            "id": 139,
+            "name": "Departamento de História",
+            "sigla": "HIS"
+        },
+        {
+            "campus": 1,
+            "id": 431,
+            "name": "Departamento de Jornalismo",
+            "sigla": "JOR"
+        },
+        {
+            "campus": 1,
+            "id": 149,
+            "name": "Departamento de Línguas Estrangeiras e Tradução",
+            "sigla": "LET"
+        },
+        {
+            "campus": 1,
+            "id": 147,
+            "name": "Departamento de Linguística, Português, Líng Clás",
+            "sigla": "LIP"
+        },
+        {
+            "campus": 1,
+            "id": 113,
+            "name": "Departamento de Matemática.",
+            "sigla": "MAT"
+        },
+        {
+            "campus": 1,
+            "id": 192,
+            "name": "Departamento de Métodos e Técnicas",
+            "sigla": "MTC"
+        },
+        {
+            "campus": 1,
+            "id": 423,
+            "name": "Departamento de Música",
+            "sigla": "MUS"
+        },
+        {
+            "campus": 1,
+            "id": 176,
+            "name": "Departamento de Nutrição",
+            "sigla": "NUT"
+        },
+        {
+            "campus": 1,
+            "id": 178,
+            "name": "Departamento de Odontologia",
+            "sigla": "ODT"
+        },
+        {
+            "campus": 1,
+            "id": 194,
+            "name": "Departamento de Planejamento e Administração",
+            "sigla": "PAD"
+        },
+        {
+            "campus": 1,
+            "id": 411,
+            "name": "Departamento de Processos Psicologicos Básicos",
+            "sigla": "PPB"
+        },
+        {
+            "campus": 1,
+            "id": 157,
+            "name": "Departamento de Projetos Expressão e Representação",
+            "sigla": "PRO"
+        },
+        {
+            "campus": 1,
+            "id": 412,
+            "name": "Departamento de Psic.Escolar e do Desenvolvimento",
+            "sigla": "PED"
+        },
+        {
+            "campus": 1,
+            "id": 413,
+            "name": "Departamento de Psicologia Clínica",
+            "sigla": "PCL"
+        },
+        {
+            "campus": 1,
+            "id": 414,
+            "name": "Departamento de Psicologia Social e do Trabalho",
+            "sigla": "PST"
+        },
+        {
+            "campus": 1,
+            "id": 179,
+            "name": "Departamento de Saúde Coletiva",
+            "sigla": "DSC"
+        },
+        {
+            "campus": 1,
+            "id": 136,
+            "name": "Departamento de Serviço Social",
+            "sigla": "SER"
+        },
+        {
+            "campus": 1,
+            "id": 134,
+            "name": "Departamento de Sociologia",
+            "sigla": "SOL"
+        },
+        {
+            "campus": 1,
+            "id": 158,
+            "name": "Departamento de Tecnologia em Arquit. e Urbanismo",
+            "sigla": "TEC"
+        },
+        {
+            "campus": 1,
+            "id": 191,
+            "name": "Departamento de Teoria e Fundamentos",
+            "sigla": "TEF"
+        },
+        {
+            "campus": 1,
+            "id": 148,
+            "name": "Departamento de Teoria Literária e Literatura",
+            "sigla": "TEL"
+        },
+        {
+            "campus": 1,
+            "id": 382,
+            "name": "Departamento de Zoologia",
+            "sigla": "ZOO"
+        },
+        {
+            "campus": 1,
+            "id": 404,
+            "name": "Depto de Ciências Contábeis e Atuariais",
+            "sigla": "CCA"
+        },
+        {
+            "campus": 1,
+            "id": 159,
+            "name": "Depto.de Teoria e Hist.em Arquitetura e Urbanismo",
+            "sigla": "THAU"
+        },
+        {
+            "campus": 1,
+            "id": 120,
+            "name": "Direção do Instituto Ciências Biológicas",
+            "sigla": "IBD"
+        },
+        {
+            "campus": 1,
+            "id": 410,
+            "name": "Direção do Instituto de Psicologia",
+            "sigla": "IP"
+        },
+        {
+            "campus": 1,
+            "id": 40,
+            "name": "Faculd. de Economia, Administração e Contabilidade",
+            "sigla": "FACE"
+        },
+        {
+            "campus": 1,
+            "id": 540,
+            "name": "Faculdade de Agronomia e Medicina Veterinária",
+            "sigla": "FAV"
+        },
+        {
+            "campus": 1,
+            "id": 700,
+            "name": "Faculdade de Ciência da Informação",
+            "sigla": "FCI"
+        },
+        {
+            "campus": 1,
+            "id": 17,
+            "name": "Faculdade de Ciências da Saúde",
+            "sigla": "FS"
+        },
+        {
+            "campus": 1,
+            "id": 430,
+            "name": "Faculdade de Comunicação",
+            "sigla": "FAC"
+        },
+        {
+            "campus": 1,
+            "id": 500,
+            "name": "Faculdade de Direito",
+            "sigla": "FDD"
+        },
+        {
+            "campus": 1,
+            "id": 19,
+            "name": "Faculdade de Educação",
+            "sigla": "FE"
+        },
+        {
+            "campus": 1,
+            "id": 530,
+            "name": "Faculdade de Educação Física",
+            "sigla": "FEF"
+        },
+        {
+            "campus": 1,
+            "id": 570,
+            "name": "Faculdade de Medicina",
+            "sigla": "FMD"
+        },
+        {
+            "campus": 1,
+            "id": 16,
+            "name": "Faculdade de Tecnologia",
+            "sigla": "FT"
+        },
+        {
+            "campus": 1,
+            "id": 420,
+            "name": "Instituto de Artes",
+            "sigla": "IDA"
+        },
+        {
+            "campus": 1,
+            "id": 588,
+            "name": "Instituto de Ciência Política",
+            "sigla": "IPOL"
+        },
+        {
+            "campus": 1,
+            "id": 12,
+            "name": "Instituto de Ciências Biológicas",
+            "sigla": "IB"
+        },
+        {
+            "campus": 1,
+            "id": 13,
+            "name": "Instituto de Ciências Humanas",
+            "sigla": "IH"
+        },
+        {
+            "campus": 1,
+            "id": 550,
+            "name": "Instituto de Física",
+            "sigla": "IFD"
+        },
+        {
+            "campus": 1,
+            "id": 440,
+            "name": "Instituto de Geociências",
+            "sigla": "IGD"
+        },
+        {
+            "campus": 1,
+            "id": 14,
+            "name": "Instituto de Letras",
+            "sigla": "IL"
+        },
+        {
+            "campus": 1,
+            "id": 560,
+            "name": "Instituto de Química",
+            "sigla": "IQD"
+        },
+        {
+            "campus": 1,
+            "id": 589,
+            "name": "Instituto de Relações Internacionais",
+            "sigla": "IREL"
+        },
+        {
+            "campus": 2,
+            "id": 638,
+            "name": "UnB - Faculdade de Planaltina",
+            "sigla": "FUP"
+        },
+        {
+            "campus": 3,
+            "id": 660,
+            "name": "UnB - Faculdade da Ceilândia",
+            "sigla": "FCE"
+        },
+        {
+            "campus": 4,
+            "id": 650,
+            "name": "UnB - Faculdade do Gama",
+            "sigla": "FGA"
+        },
+        {
+            "campus": 1,
+            "id": 1000,
+            "name": "Departamento de Urbanismo",
+            "sigla": "URB"
+        },
+        {
+            "campus": 1,
+            "id": 1001,
+            "name": "Departamento de Ciência da Inform. e Documentação",
+            "sigla": "CID"
+        },
+        {
+            "campus": 1,
+            "id": 1002,
+            "name": "Departamento de Relações Internacionais",
+            "sigla": "REL"
+        },
+        {
+            "campus": 1,
+            "id": 1003,
+            "name": "Centro Integrado de Ordenamento Territorial",
+            "sigla": "CIORD"
+        },
+        {
+            "campus": 1,
+            "id": 1004,
+            "name": "Instituto de Ciências Sociais",
+            "sigla": "ICS"
+        },
+        {
+            "campus": 1,
+            "id": 1005,
+            "name": "Departamento de Comunicação Organizacional",
+            "sigla": "COM"
+        },
+        {
+            "campus": 1,
+            "id": 1006,
+            "name": "Núcleo de Medicina Tropical",
+            "sigla": "NMT"
+        },
+        {
+            "campus": 1,
+            "id": 1007,
+            "name": "Departamento de Biologia Vegetal",
+            "sigla": "VEG"
+        },
+        {
+            "campus": 1,
+            "id": 1008,
+            "name": "Departamento de Clínica Médica",
+            "sigla": "CLC"
+        }
+    ]
+}
