@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileHeaderView" customModule="MatWebUnB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-FZ-WsL">
+                    <rect key="frame" x="24" y="10" width="381" height="110"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-IS-qWp">
+                            <rect key="frame" x="12" y="29" width="64" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="k16-Gn-IfW"/>
+                                <constraint firstAttribute="width" constant="64" id="nAr-yG-Y4b"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AhD-59-jA5">
+                            <rect key="frame" x="96" y="29" width="235" height="51"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-GE-gtS">
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="20.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7j-H1-mA1">
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJe-Fi-0RY">
+                                            <rect key="frame" x="106" y="0.0" width="129" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT8-0N-jPy">
+                                    <rect key="frame" x="0.0" y="30.5" width="235" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BIH-IS-qWp" firstAttribute="centerY" secondItem="Kao-FZ-WsL" secondAttribute="centerY" id="5Kw-gR-uXA"/>
+                        <constraint firstItem="BIH-IS-qWp" firstAttribute="leading" secondItem="Kao-FZ-WsL" secondAttribute="leading" constant="12" id="76E-6g-mmd"/>
+                        <constraint firstItem="AhD-59-jA5" firstAttribute="top" secondItem="BIH-IS-qWp" secondAttribute="top" id="NH4-ku-PWs"/>
+                        <constraint firstItem="AhD-59-jA5" firstAttribute="bottom" secondItem="BIH-IS-qWp" secondAttribute="bottom" id="Nkb-qH-Sql"/>
+                        <constraint firstItem="AhD-59-jA5" firstAttribute="leading" secondItem="BIH-IS-qWp" secondAttribute="trailing" constant="20" id="r08-oB-tNY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Kao-FZ-WsL" secondAttribute="bottom" constant="20" id="4zG-c8-HVb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Kao-FZ-WsL" secondAttribute="trailing" constant="-30" id="bkW-iF-DhP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AhD-59-jA5" secondAttribute="trailing" constant="20" id="cKE-bj-1ZX"/>
+                <constraint firstItem="Kao-FZ-WsL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="trf-wF-vXz"/>
+                <constraint firstItem="Kao-FZ-WsL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="wv1-7p-7yf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="Kao-FZ-WsL" id="0ZW-Vc-XSO"/>
+                <outlet property="courseLabel" destination="dJe-Fi-0RY" id="V8X-pp-9xF"/>
+                <outlet property="nameLabel" destination="e7j-H1-mA1" id="guA-fM-AqL"/>
+                <outlet property="photoImageView" destination="BIH-IS-qWp" id="hjD-uW-PEm"/>
+                <outlet property="registrationNumberLabel" destination="aT8-0N-jPy" id="atI-xy-060"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-206.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar" width="64" height="64"/>
+    </resources>
+</document>

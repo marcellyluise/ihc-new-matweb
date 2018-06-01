@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780AD0550CC89F3B4DD8E387 /* Pods_MatWebUnBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C9BAC7E35617AC1BF0CAB8 /* Pods_MatWebUnBUITests.framework */; };
+		785F6713CEE1B6B96EBB0486 /* Pods_MatWebUnBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B939C496AFBCF756BD76609 /* Pods_MatWebUnBTests.framework */; };
+		8C19FEDCF559445880B1040B /* Pods_MatWebUnB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB2F58C055CAA0D5631CBD /* Pods_MatWebUnB.framework */; };
 		FD38AEAF20C193B000BB932D /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEAE20C193B000BB932D /* Feed.storyboard */; };
 		FD38AEB120C193C800BB932D /* Campus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEB020C193C800BB932D /* Campus.storyboard */; };
 		FD38AEB320C193D400BB932D /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEB220C193D400BB932D /* Search.storyboard */; };
 		FD38AEB520C193ED00BB932D /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEB420C193ED00BB932D /* Registration.storyboard */; };
 		FD38AEB720C1944500BB932D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEB620C1944500BB932D /* Profile.storyboard */; };
+		FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */; };
+		FD38AEBE20C1EC0200BB932D /* ProfileItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */; };
+		FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEBF20C1ED2400BB932D /* ProfileHeaderView.swift */; };
+		FD38AEC220C1ED2C00BB932D /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AEC120C1ED2C00BB932D /* ProfileHeaderView.xib */; };
+		FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */; };
+		FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
-		FDDA20412092A578008C932F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20402092A578008C932F /* ViewController.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
 		FDDA20492092A57C008C932F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20482092A57C008C932F /* Assets.xcassets */; };
@@ -40,14 +48,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0102054E5E41874FBC53EEC4 /* Pods-MatWebUnB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatWebUnB.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB.release.xcconfig"; sourceTree = "<group>"; };
+		2AAB2F58C055CAA0D5631CBD /* Pods_MatWebUnB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatWebUnB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3312EFF346EA0558CBD2DB9F /* Pods-MatWebUnBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatWebUnBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatWebUnBUITests/Pods-MatWebUnBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89320FBE44CCBAD4F1D171FC /* Pods-MatWebUnBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatWebUnBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatWebUnBTests/Pods-MatWebUnBTests.release.xcconfig"; sourceTree = "<group>"; };
+		89742356BFED1FB53BDAE249 /* Pods-MatWebUnB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatWebUnB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB.debug.xcconfig"; sourceTree = "<group>"; };
+		9B939C496AFBCF756BD76609 /* Pods_MatWebUnBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatWebUnBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DABD354B31B5F647C3F7E7 /* Pods-MatWebUnBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatWebUnBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatWebUnBTests/Pods-MatWebUnBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D763AEDD701E60C9D42A76B3 /* Pods-MatWebUnBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatWebUnBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatWebUnBUITests/Pods-MatWebUnBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8C9BAC7E35617AC1BF0CAB8 /* Pods_MatWebUnBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatWebUnBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD38AEAE20C193B000BB932D /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		FD38AEB020C193C800BB932D /* Campus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Campus.storyboard; sourceTree = "<group>"; };
 		FD38AEB220C193D400BB932D /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		FD38AEB420C193ED00BB932D /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		FD38AEB620C1944500BB932D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItemTableViewCell.swift; sourceTree = "<group>"; };
+		FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileItemTableViewCell.xib; sourceTree = "<group>"; };
+		FD38AEBF20C1ED2400BB932D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		FD38AEC120C1ED2C00BB932D /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDDA20402092A578008C932F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDDA20462092A578008C932F /* MatWebUnB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MatWebUnB.xcdatamodel; sourceTree = "<group>"; };
 		FDDA20482092A57C008C932F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C19FEDCF559445880B1040B /* Pods_MatWebUnB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785F6713CEE1B6B96EBB0486 /* Pods_MatWebUnBTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +104,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780AD0550CC89F3B4DD8E387 /* Pods_MatWebUnBUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97FB77E9F2B9E1DE886A1277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AAB2F58C055CAA0D5631CBD /* Pods_MatWebUnB.framework */,
+				9B939C496AFBCF756BD76609 /* Pods_MatWebUnBTests.framework */,
+				F8C9BAC7E35617AC1BF0CAB8 /* Pods_MatWebUnBUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF83156829B6DB4939CF104E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89742356BFED1FB53BDAE249 /* Pods-MatWebUnB.debug.xcconfig */,
+				0102054E5E41874FBC53EEC4 /* Pods-MatWebUnB.release.xcconfig */,
+				C8DABD354B31B5F647C3F7E7 /* Pods-MatWebUnBTests.debug.xcconfig */,
+				89320FBE44CCBAD4F1D171FC /* Pods-MatWebUnBTests.release.xcconfig */,
+				D763AEDD701E60C9D42A76B3 /* Pods-MatWebUnBUITests.debug.xcconfig */,
+				3312EFF346EA0558CBD2DB9F /* Pods-MatWebUnBUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD38AEB820C1EBBB00BB932D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */,
+				FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FD38AEB920C1EBC700BB932D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AEBF20C1ED2400BB932D /* ProfileHeaderView.swift */,
+				FD38AEC120C1ED2C00BB932D /* ProfileHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		FD38AEBA20C1EBD300BB932D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		FD75E03E20AB5A9800762B50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,17 +170,21 @@
 		FD75E03F20AB5AA500762B50 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD38AEBA20C1EBD300BB932D /* Custom */,
+				FD38AEB920C1EBC700BB932D /* Header */,
+				FD38AEB820C1EBBB00BB932D /* Cell */,
 				FD75E04120AB5AB300762B50 /* Storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		FD75E04020AB5AA900762B50 /* Controller */ = {
+		FD75E04020AB5AA900762B50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FDDA20402092A578008C932F /* ViewController.swift */,
+				FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */,
+				FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */,
 			);
-			path = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FD75E04120AB5AB300762B50 /* Storyboard */ = {
@@ -140,6 +217,8 @@
 				FDDA20552092A57C008C932F /* MatWebUnBTests */,
 				FDDA20602092A57C008C932F /* MatWebUnBUITests */,
 				FDDA203C2092A578008C932F /* Products */,
+				DF83156829B6DB4939CF104E /* Pods */,
+				97FB77E9F2B9E1DE886A1277 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,7 +238,7 @@
 				FDDA203E2092A578008C932F /* AppDelegate.swift */,
 				FD75E03E20AB5A9800762B50 /* Model */,
 				FD75E03F20AB5AA500762B50 /* View */,
-				FD75E04020AB5AA900762B50 /* Controller */,
+				FD75E04020AB5AA900762B50 /* ViewModel */,
 				FD75E04220AB5ACA00762B50 /* Resources */,
 			);
 			path = MatWebUnB;
@@ -190,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDDA20662092A57C008C932F /* Build configuration list for PBXNativeTarget "MatWebUnB" */;
 			buildPhases = (
+				416579E356D494405CB251F8 /* [CP] Check Pods Manifest.lock */,
 				FDDA20372092A578008C932F /* Sources */,
 				FDDA20382092A578008C932F /* Frameworks */,
 				FDDA20392092A578008C932F /* Resources */,
+				E0B2A9A8E0AE4457B86082C5 /* [CP] Embed Pods Frameworks */,
+				0A040E0EE52048F8D66618CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDDA20692092A57C008C932F /* Build configuration list for PBXNativeTarget "MatWebUnBTests" */;
 			buildPhases = (
+				AE5CECD6CB581F5A865DB37C /* [CP] Check Pods Manifest.lock */,
 				FDDA204E2092A57C008C932F /* Sources */,
 				FDDA204F2092A57C008C932F /* Frameworks */,
 				FDDA20502092A57C008C932F /* Resources */,
+				DCFD390A480C6A9037124058 /* [CP] Embed Pods Frameworks */,
+				5D541394DEB2678170329DF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,9 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDDA206C2092A57C008C932F /* Build configuration list for PBXNativeTarget "MatWebUnBUITests" */;
 			buildPhases = (
+				A1BC48059A5A0955C070FE5F /* [CP] Check Pods Manifest.lock */,
 				FDDA20592092A57C008C932F /* Sources */,
 				FDDA205A2092A57C008C932F /* Frameworks */,
 				FDDA205B2092A57C008C932F /* Resources */,
+				3CA92C91E32F573866F9AC23 /* [CP] Embed Pods Frameworks */,
+				9318655F06BB02BA01A22A6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,9 +380,11 @@
 				FD38AEB720C1944500BB932D /* Profile.storyboard in Resources */,
 				FDDA20492092A57C008C932F /* Assets.xcassets in Resources */,
 				FD38AEB520C193ED00BB932D /* Registration.storyboard in Resources */,
+				FD38AEBE20C1EC0200BB932D /* ProfileItemTableViewCell.xib in Resources */,
 				FD38AEAF20C193B000BB932D /* Feed.storyboard in Resources */,
 				FD38AEB320C193D400BB932D /* Search.storyboard in Resources */,
 				FDDA20442092A578008C932F /* Main.storyboard in Resources */,
+				FD38AEC220C1ED2C00BB932D /* ProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +404,167 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A040E0EE52048F8D66618CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CA92C91E32F573866F9AC23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnBUITests/Pods-MatWebUnBUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		416579E356D494405CB251F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatWebUnB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D541394DEB2678170329DF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnBTests/Pods-MatWebUnBTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9318655F06BB02BA01A22A6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnBUITests/Pods-MatWebUnBUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1BC48059A5A0955C070FE5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatWebUnBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE5CECD6CB581F5A865DB37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatWebUnBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCFD390A480C6A9037124058 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnBTests/Pods-MatWebUnBTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B2A9A8E0AE4457B86082C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDDA20372092A578008C932F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */,
+				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
-				FDDA20412092A578008C932F /* ViewController.swift in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
+				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
+				FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +735,7 @@
 		};
 		FDDA20672092A57C008C932F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89742356BFED1FB53BDAE249 /* Pods-MatWebUnB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +754,7 @@
 		};
 		FDDA20682092A57C008C932F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0102054E5E41874FBC53EEC4 /* Pods-MatWebUnB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +773,7 @@
 		};
 		FDDA206A2092A57C008C932F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DABD354B31B5F647C3F7E7 /* Pods-MatWebUnBTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -549,6 +795,7 @@
 		};
 		FDDA206B2092A57C008C932F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89320FBE44CCBAD4F1D171FC /* Pods-MatWebUnBTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +817,7 @@
 		};
 		FDDA206D2092A57C008C932F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D763AEDD701E60C9D42A76B3 /* Pods-MatWebUnBUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +838,7 @@
 		};
 		FDDA206E2092A57C008C932F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3312EFF346EA0558CBD2DB9F /* Pods-MatWebUnBUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

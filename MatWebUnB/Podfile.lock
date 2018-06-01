@@ -1,0 +1,26 @@
+PODS:
+  - SwifterSwift (4.3.0):
+    - SwifterSwift/AppKit (= 4.3.0)
+    - SwifterSwift/CoreGraphics (= 4.3.0)
+    - SwifterSwift/CoreLocation (= 4.3.0)
+    - SwifterSwift/Foundation (= 4.3.0)
+    - SwifterSwift/MapKit (= 4.3.0)
+    - SwifterSwift/SwiftStdlib (= 4.3.0)
+    - SwifterSwift/UIKit (= 4.3.0)
+  - SwifterSwift/AppKit (4.3.0)
+  - SwifterSwift/CoreGraphics (4.3.0)
+  - SwifterSwift/CoreLocation (4.3.0)
+  - SwifterSwift/Foundation (4.3.0)
+  - SwifterSwift/MapKit (4.3.0)
+  - SwifterSwift/SwiftStdlib (4.3.0)
+  - SwifterSwift/UIKit (4.3.0)
+
+DEPENDENCIES:
+  - SwifterSwift
+
+SPEC CHECKSUMS:
+  SwifterSwift: f3fce2b9fc5b9d8fda6eec33825e5243c60aebba
+
+PODFILE CHECKSUM: e07c232e3a7af1ad460481c2d06ee9b5778b0539
+
+COCOAPODS: 1.4.0
