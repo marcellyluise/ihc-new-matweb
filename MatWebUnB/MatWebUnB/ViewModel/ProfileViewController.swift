@@ -27,6 +27,7 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Table View
     private func setupTableView() {
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 44.0
@@ -38,8 +39,14 @@ class ProfileViewController: UIViewController {
                                  bundle: nil),
                            forCellReuseIdentifier: String(describing: ProfileItemTableViewCell.self))
     }
+    
+    // MARK: - Logout
+    private func logout() {
+        print(#function)
+    }
 }
 
+// MARK: - Table View Data Source
 extension ProfileViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -67,7 +74,7 @@ extension ProfileViewController: UITableViewDataSource {
         return itemCell
     }
 }
-
+// MARK: - Table View Delegate
 extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return ProfileHeaderView.createHeader()
@@ -75,5 +82,20 @@ extension ProfileViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 140.0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return LogoutView.create(with: self)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 80.0
+    }
+}
+
+// MARK: - Footer Delegate
+extension ProfileViewController: LogoutViewDelegate {
+    func logoutViewDidTapButton() {
+        logout()
     }
 }
