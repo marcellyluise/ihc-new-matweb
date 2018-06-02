@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let viewModel = ProfileViewModel()
+    private var itemsIcon = [#imageLiteral(resourceName: "personal-data"), #imageLiteral(resourceName: "recommendation"), #imageLiteral(resourceName: "schedule"), #imageLiteral(resourceName: "history"), #imageLiteral(resourceName: "summary"), #imageLiteral(resourceName: "diploma-request")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,7 @@ extension ProfileViewController: UITableViewDataSource {
         let item = viewModel.item(at: indexPath)
         
         itemCell.itemLabel.text = item
+        itemCell.itemIconImageView.image = itemsIcon[indexPath.row]
         
         return itemCell
     }
