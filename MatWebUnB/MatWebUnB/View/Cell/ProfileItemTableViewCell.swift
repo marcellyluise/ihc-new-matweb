@@ -9,7 +9,10 @@
 import UIKit
 
 class ProfileItemTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var itemIconImageView: UIImageView!
+    @IBOutlet weak var itemLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

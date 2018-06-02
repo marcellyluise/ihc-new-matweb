@@ -12,6 +12,8 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let viewModel = ProfileViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +45,7 @@ extension ProfileViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return viewModel.numberOfItems()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,6 +57,10 @@ extension ProfileViewController: UITableViewDataSource {
         guard let itemCell = tableView.dequeueReusableCell(withIdentifier: String(describing: ProfileItemTableViewCell.self), for: indexPath) as? ProfileItemTableViewCell else {
             return UITableViewCell()
         }
+        
+        let item = viewModel.item(at: indexPath)
+        
+        itemCell.itemLabel.text = item
         
         return itemCell
     }
