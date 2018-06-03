@@ -25,6 +25,8 @@
 		FD38AECB20C3644500BB932D /* LogoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AECA20C3644500BB932D /* LogoutView.xib */; };
 		FD38AECD20C368B300BB932D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AECC20C368B300BB932D /* Authentication.storyboard */; };
 		FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED020C36C4A00BB932D /* LoginViewController.swift */; };
+		FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */; };
+		FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -76,6 +78,8 @@
 		FD38AECA20C3644500BB932D /* LogoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutView.xib; sourceTree = "<group>"; };
 		FD38AECC20C368B300BB932D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		FD38AED020C36C4A00BB932D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,8 +149,8 @@
 		FD38AEB820C1EBBB00BB932D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */,
-				FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */,
+				FD38AED320C36F7400BB932D /* Form */,
+				FD38AED220C36F6600BB932D /* Profile */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -191,6 +195,24 @@
 				FD38AED020C36C4A00BB932D /* LoginViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FD38AED220C36F6600BB932D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */,
+				FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD38AED320C36F7400BB932D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */,
+				FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 		FD75E03E20AB5A9800762B50 /* Model */ = {
@@ -422,6 +444,7 @@
 				FD38AEB320C193D400BB932D /* Search.storyboard in Resources */,
 				FDDA20442092A578008C932F /* Main.storyboard in Resources */,
 				FD38AEC220C1ED2C00BB932D /* ProfileHeaderView.xib in Resources */,
+				FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */,
 				FD38AECB20C3644500BB932D /* LogoutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,10 +602,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Quiver/Quiver.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMaskText/SwiftMaskText.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quiver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMaskText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */,
+				FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */,
 				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
@@ -781,10 +809,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -800,10 +825,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -820,11 +842,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -842,11 +860,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -863,11 +877,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -884,11 +894,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

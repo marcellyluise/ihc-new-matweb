@@ -9,6 +9,8 @@ target 'MatWebUnB' do
     
     # Pods for MatWebUnB
     pod 'SwifterSwift'
+    pod 'Quiver'
+    pod 'SwiftMaskText'
     
     target 'MatWebUnBTests' do
         inherit! :search_paths
