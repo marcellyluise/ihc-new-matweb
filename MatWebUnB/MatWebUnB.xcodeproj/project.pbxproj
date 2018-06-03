@@ -23,6 +23,8 @@
 		FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */; };
 		FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEC820C3643F00BB932D /* LogoutView.swift */; };
 		FD38AECB20C3644500BB932D /* LogoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AECA20C3644500BB932D /* LogoutView.xib */; };
+		FD38AECD20C368B300BB932D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AECC20C368B300BB932D /* Authentication.storyboard */; };
+		FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED020C36C4A00BB932D /* LoginViewController.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -72,6 +74,8 @@
 		FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FD38AEC820C3643F00BB932D /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		FD38AECA20C3644500BB932D /* LogoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutView.xib; sourceTree = "<group>"; };
+		FD38AECC20C368B300BB932D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		FD38AED020C36C4A00BB932D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,6 +176,23 @@
 			path = Footer;
 			sourceTree = "<group>";
 		};
+		FD38AECE20C36C2C00BB932D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */,
+				FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD38AECF20C36C3A00BB932D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AED020C36C4A00BB932D /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		FD75E03E20AB5A9800762B50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,8 +216,8 @@
 		FD75E04020AB5AA900762B50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */,
-				FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */,
+				FD38AECF20C36C3A00BB932D /* Authentication */,
+				FD38AECE20C36C2C00BB932D /* Profile */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +232,7 @@
 				FDDA204A2092A57C008C932F /* LaunchScreen.storyboard */,
 				FD38AEAE20C193B000BB932D /* Feed.storyboard */,
 				FD38AEB020C193C800BB932D /* Campus.storyboard */,
+				FD38AECC20C368B300BB932D /* Authentication.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -389,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD38AECD20C368B300BB932D /* Authentication.storyboard in Resources */,
 				FD38AEB120C193C800BB932D /* Campus.storyboard in Resources */,
 				FDDA204C2092A57C008C932F /* LaunchScreen.storyboard in Resources */,
 				FD38AEB720C1944500BB932D /* Profile.storyboard in Resources */,
@@ -578,6 +601,7 @@
 				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
+				FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */,
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
 				FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */,
 				FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */,
