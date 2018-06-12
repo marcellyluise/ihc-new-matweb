@@ -13,13 +13,32 @@
         <!--Perfil-->
         <scene sceneID="pe1-be-FDG">
             <objects>
-                <viewController title="Perfil" id="HD4-9o-WLw" sceneMemberID="viewController">
+                <viewController title="Perfil" id="HD4-9o-WLw" customClass="ProfileViewController" customModule="MatWebUnB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B77-Va-qtB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E00-2B-1kU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HD4-9o-WLw" id="4xa-8l-hHb"/>
+                                    <outlet property="delegate" destination="HD4-9o-WLw" id="2fu-W5-kJV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E00-2B-1kU" firstAttribute="top" secondItem="uFA-j5-g3r" secondAttribute="top" id="Bv8-GT-0fg"/>
+                            <constraint firstItem="uFA-j5-g3r" firstAttribute="trailing" secondItem="E00-2B-1kU" secondAttribute="trailing" id="CUp-6S-Qbq"/>
+                            <constraint firstItem="uFA-j5-g3r" firstAttribute="bottom" secondItem="E00-2B-1kU" secondAttribute="bottom" id="ONM-9Y-jjb"/>
+                            <constraint firstItem="E00-2B-1kU" firstAttribute="leading" secondItem="uFA-j5-g3r" secondAttribute="leading" id="rZH-xX-FNJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uFA-j5-g3r"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="E00-2B-1kU" id="d4D-mr-SBq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAo-17-GKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
