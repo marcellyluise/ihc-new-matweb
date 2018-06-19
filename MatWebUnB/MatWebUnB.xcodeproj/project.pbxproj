@@ -31,6 +31,8 @@
 		FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63420D8B77300BFC818 /* LoginViewModel.swift */; };
 		FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63620D8BC1C00BFC818 /* LoginField.swift */; };
 		FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */; };
+		FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */; };
+		FDABA64020D8C8E100BFC818 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63F20D8C8E100BFC818 /* Formatter.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -88,6 +90,8 @@
 		FDABA63420D8B77300BFC818 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FDABA63620D8BC1C00BFC818 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
 		FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldViewModel.swift; sourceTree = "<group>"; };
+		FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskFormatter.swift; sourceTree = "<group>"; };
+		FDABA63F20D8C8E100BFC818 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -289,6 +293,31 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
+		FDABA63A20D8C6FB00BFC818 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63B20D8C70D00BFC818 /* Formatter */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FDABA63B20D8C70D00BFC818 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		FDABA63E20D8C8C100BFC818 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63F20D8C8E100BFC818 /* Formatter.swift */,
+			);
+			name = Protocol;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FDDA20322092A578008C932F = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +345,8 @@
 			children = (
 				FDDA203E2092A578008C932F /* AppDelegate.swift */,
 				FDABA63320D8B56E00BFC818 /* MVVM */,
+				FDABA63A20D8C6FB00BFC818 /* Util */,
+				FDABA63E20D8C8C100BFC818 /* Protocol */,
 				FDABA63020D8B4F400BFC818 /* Extension */,
 				FD75E04220AB5ACA00762B50 /* Resources */,
 			);
@@ -646,6 +677,7 @@
 			files = (
 				FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */,
 				FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */,
+				FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */,
 				FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */,
 				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
 				FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */,
@@ -655,6 +687,7 @@
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
 				FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */,
 				FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */,
+				FDABA64020D8C8E100BFC818 /* Formatter.swift in Sources */,
 				FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */,
 				FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */,
 			);

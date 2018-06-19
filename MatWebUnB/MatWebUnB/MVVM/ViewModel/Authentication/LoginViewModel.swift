@@ -27,7 +27,7 @@ class LoginViewModel {
     }
     
     private func setupFields() {
-        let registrationField = LoginField(placeholder: "Digite sua matrícula", fieldValue: nil, type: .registration, formatter: nil, validators: [.required(), .numeric()], icon: #imageLiteral(resourceName: "registration-icon"))
+        let registrationField = LoginField(placeholder: "Digite sua matrícula", fieldValue: nil, type: .registration, formatter: MaskFormatter.registrationNumber, validators: [.required(), .numeric()], icon: #imageLiteral(resourceName: "registration-icon"))
         let passwordField = LoginField(placeholder: "Digite sua senha", fieldValue: nil, type: .password, formatter: nil, validators: [.required()], icon: #imageLiteral(resourceName: "locker"))
         
         fields.append(registrationField)

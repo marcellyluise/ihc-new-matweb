@@ -73,6 +73,7 @@ extension LoginViewController: UITableViewDataSource {
         formFieldCell.fieldValue = field?.fieldValue
         formFieldCell.isSecureTextEntry = field?.isSecureField ?? false
         formFieldCell.keyboardType = field?.keyboardType ?? .default
+        formFieldCell.formatter = field?.formatter
         
         return formFieldCell
     }

@@ -36,19 +36,36 @@ class FormTableViewCell: UITableViewCell {
     }
     
     var icon: UIImage? {
-        get { return iconImageView.image }
-        set { iconImageView.image = newValue }
+        didSet {
+            iconImageView.image = icon
+        }
     }
+    var formatter: Formatter?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        setupTextField()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
+    private func setupTextField() {
+        textField.delegate = self
+        textField.addTarget(self, action: #selector(textFieldChanged(_:)), for: .editingChanged)
+    }
+}
+
+extension FormTableViewCell: UITextFieldDelegate {
+    
+    @objc private func textFieldChanged(_ textField: UITextField) {
+        if let formatter = formatter {
+            textField.text = formatter.format(input: textField.text ?? "")
+        }
+    }
 }
