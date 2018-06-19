@@ -28,6 +28,9 @@
 		FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */; };
 		FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */; };
 		FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63120D8B4F400BFC818 /* String+Extension.swift */; };
+		FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63420D8B77300BFC818 /* LoginViewModel.swift */; };
+		FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63620D8BC1C00BFC818 /* LoginField.swift */; };
+		FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -82,6 +85,9 @@
 		FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
 		FDABA63120D8B4F400BFC818 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FDABA63420D8B77300BFC818 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FDABA63620D8BC1C00BFC818 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldViewModel.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -188,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				FD38AED020C36C4A00BB932D /* LoginViewController.swift */,
+				FDABA63420D8B77300BFC818 /* LoginViewModel.swift */,
+				FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */,
+				FDABA63620D8BC1C00BFC818 /* LoginField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -637,11 +646,14 @@
 			files = (
 				FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */,
 				FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */,
+				FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */,
 				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
+				FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
 				FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */,
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
+				FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */,
 				FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */,
 				FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */,
 				FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */,

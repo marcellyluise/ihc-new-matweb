@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private let viewModel = LoginViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +34,7 @@ class LoginViewController: UIViewController {
     }
     
     private func registerCells() {
-        tableView.register(UINib(nibName: String(describing: FormTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: FormTableViewCell.self))
+        tableView.register(nibWithCellClass: FormTableViewCell.self)
     }
     
     // MARK: - Actions
@@ -52,14 +54,26 @@ extension LoginViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return viewModel.numberOfFields
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let formCell = tableView.dequeueReusableCell(withIdentifier: String(describing: FormTableViewCell.self), for: indexPath) as? FormTableViewCell else {
+        return generateFieldCell(with: tableView, at: indexPath)
+    }
+    
+    private func generateFieldCell(with tableView: UITableView, at indexPath: IndexPath) -> FormTableViewCell {
+        guard let formFieldCell = tableView.dequeueReusableCell(withClass: FormTableViewCell.self, for: indexPath) else {
             return FormTableViewCell()
         }
         
-        return formCell
+        let field = viewModel.loginFieldModel(at: indexPath)
+        
+        formFieldCell.icon = field?.icon
+        formFieldCell.placeholder = field?.placeholder
+        formFieldCell.fieldValue = field?.fieldValue
+        formFieldCell.isSecureTextEntry = field?.isSecureField ?? false
+        formFieldCell.keyboardType = field?.keyboardType ?? .default
+        
+        return formFieldCell
     }
 }
