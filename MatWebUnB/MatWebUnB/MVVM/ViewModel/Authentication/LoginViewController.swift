@@ -39,12 +39,29 @@ class LoginViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func login(_ sender: Any) {
-        
+        if viewModel.isFormValidated {
+            goToMainNavigation()
+        } else {
+            showAlert(title: "Ops! 😬",
+                      message: "Parece que tem algo errado com suas credenciais...",
+                      buttonTitles: ["Beleza 👍🏻"],
+                      highlightedButtonIndex: nil,
+                      completion: nil)
+        }
     }
     
     @IBAction func switchToPos(_ sender: Any) {
         
     }
+    
+    // MARK: - Navigation
+    private func goToMainNavigation() {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let initialViewController = mainStoryboard.instantiateInitialViewController()
+        
+        UIApplication.shared.keyWindow?.rootViewController = initialViewController
+    }
+    
 }
 
 // MARK: - Table View Data Source
@@ -68,6 +85,9 @@ extension LoginViewController: UITableViewDataSource {
         
         let field = viewModel.loginFieldModel(at: indexPath)
         
+        formFieldCell.delegate = self
+        
+        formFieldCell.indexPath = indexPath
         formFieldCell.icon = field?.icon
         formFieldCell.placeholder = field?.placeholder
         formFieldCell.fieldValue = field?.fieldValue
@@ -76,5 +96,29 @@ extension LoginViewController: UITableViewDataSource {
         formFieldCell.formatter = field?.formatter
         
         return formFieldCell
+    }
+}
+
+extension LoginViewController: FormTableViewCellDelegate {
+    func formField(_ cell: FormTableViewCell, didChangeValidation validationResult: FormValidationResult?) {
+        
+        let indexPath = cell.indexPath ?? IndexPath(row: 0, section: 0)
+        
+        viewModel.loginFieldModel(at: indexPath)?.fieldValue = cell.unformattedValue
+    }
+    
+    func formFieldEditinDidBegin(_ cell: FormTableViewCell) {
+        
+    }
+    
+    func formFieldEditinDidEnd(_ cell: FormTableViewCell) {
+        
+        let indexPath = cell.indexPath ?? IndexPath(row: 0, section: 0)
+        
+        viewModel.loginFieldModel(at: indexPath)?.fieldValue = cell.unformattedValue
+    }
+    
+    func formFieldDidTapTitleIcon(_ cell: FormTableViewCell) {
+        
     }
 }

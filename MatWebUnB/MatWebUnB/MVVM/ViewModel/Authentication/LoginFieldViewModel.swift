@@ -18,7 +18,8 @@ class LoginFieldViewModel {
     }
     
     var fieldValue: String? {
-        return loginField.fieldValue
+        get { return loginField.fieldValue }
+        set { loginField.fieldValue = newValue }
     }
     
     var formatter: Formatter? {

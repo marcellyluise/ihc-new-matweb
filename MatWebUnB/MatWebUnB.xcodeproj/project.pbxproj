@@ -33,6 +33,7 @@
 		FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */; };
 		FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */; };
 		FDABA64020D8C8E100BFC818 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63F20D8C8E100BFC818 /* Formatter.swift */; };
+		FDABA64220D8D2A400BFC818 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64120D8D2A400BFC818 /* FormValidator.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -92,6 +93,7 @@
 		FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldViewModel.swift; sourceTree = "<group>"; };
 		FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskFormatter.swift; sourceTree = "<group>"; };
 		FDABA63F20D8C8E100BFC818 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		FDABA64120D8D2A400BFC818 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 		FDABA63E20D8C8C100BFC818 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				FDABA64120D8D2A400BFC818 /* FormValidator.swift */,
 				FDABA63F20D8C8E100BFC818 /* Formatter.swift */,
 			);
 			name = Protocol;
@@ -683,6 +686,7 @@
 				FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
+				FDABA64220D8D2A400BFC818 /* FormValidator.swift in Sources */,
 				FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */,
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
 				FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */,
