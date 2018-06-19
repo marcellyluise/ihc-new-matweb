@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oGG-Wp-EZN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="32z-Kn-3Hs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,20 +10,73 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Busca-->
+        <!--View Controller-->
         <scene sceneID="vzD-9K-uf4">
             <objects>
-                <viewController title="Busca" id="oGG-Wp-EZN" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="oGG-Wp-EZN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2X-Py-YaG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search-Results" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-Ze-UAP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KmI-VP-qET" firstAttribute="trailing" secondItem="Y2P-Ze-UAP" secondAttribute="trailing" id="AI7-yV-TsN"/>
+                            <constraint firstItem="Y2P-Ze-UAP" firstAttribute="leading" secondItem="KmI-VP-qET" secondAttribute="leading" id="E7f-Ek-IJR"/>
+                            <constraint firstItem="KmI-VP-qET" firstAttribute="bottom" secondItem="Y2P-Ze-UAP" secondAttribute="bottom" id="ZxB-1m-Neh"/>
+                            <constraint firstItem="Y2P-Ze-UAP" firstAttribute="top" secondItem="KmI-VP-qET" secondAttribute="top" id="jba-ss-IQ7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KmI-VP-qET"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIJ-hY-C9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="21"/>
+            <point key="canvasLocation" x="775" y="20"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qrs-Sa-0iK">
+            <objects>
+                <viewController id="32z-Kn-3Hs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDu-XT-6pv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-Ws-ST6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-Dk-Fy0">
+                                <rect key="frame" x="20" y="569" width="335" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="sSa-zo-cwM"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="oGG-Wp-EZN" kind="show" id="VXw-cx-9pZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cJz-V4-Ayq" firstAttribute="trailing" secondItem="l7h-Dk-Fy0" secondAttribute="trailing" constant="20" id="A34-aV-sMU"/>
+                            <constraint firstItem="rUV-Ws-ST6" firstAttribute="top" secondItem="cJz-V4-Ayq" secondAttribute="top" id="MWm-eo-Dyu"/>
+                            <constraint firstItem="cJz-V4-Ayq" firstAttribute="bottom" secondItem="rUV-Ws-ST6" secondAttribute="bottom" id="MuW-OC-idy"/>
+                            <constraint firstItem="rUV-Ws-ST6" firstAttribute="leading" secondItem="cJz-V4-Ayq" secondAttribute="leading" id="TR8-zJ-418"/>
+                            <constraint firstItem="cJz-V4-Ayq" firstAttribute="bottom" secondItem="l7h-Dk-Fy0" secondAttribute="bottom" constant="10" id="jHT-z8-Nmd"/>
+                            <constraint firstItem="cJz-V4-Ayq" firstAttribute="trailing" secondItem="rUV-Ws-ST6" secondAttribute="trailing" id="oas-Jz-mJg"/>
+                            <constraint firstItem="l7h-Dk-Fy0" firstAttribute="leading" secondItem="cJz-V4-Ayq" secondAttribute="leading" constant="20" id="q31-wC-vu1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cJz-V4-Ayq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAD-JI-nYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="18.440779610194905"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Search" width="360" height="662"/>
+        <image name="Search-Results" width="351" height="658"/>
+    </resources>
 </document>
