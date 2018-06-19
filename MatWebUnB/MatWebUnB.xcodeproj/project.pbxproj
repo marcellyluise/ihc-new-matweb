@@ -34,6 +34,14 @@
 		FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */; };
 		FDABA64020D8C8E100BFC818 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63F20D8C8E100BFC818 /* Formatter.swift */; };
 		FDABA64220D8D2A400BFC818 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64120D8D2A400BFC818 /* FormValidator.swift */; };
+		FDABA64520D93BCA00BFC818 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64420D93BCA00BFC818 /* FeedViewController.swift */; };
+		FDABA64720D93DB600BFC818 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64620D93DB600BFC818 /* FeedViewModel.swift */; };
+		FDABA64920D93EC600BFC818 /* FeedFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64820D93EC600BFC818 /* FeedFilter.swift */; };
+		FDABA64D20D9404700BFC818 /* FilterFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64B20D9404700BFC818 /* FilterFeedTableViewCell.swift */; };
+		FDABA64E20D9404700BFC818 /* FilterFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDABA64C20D9404700BFC818 /* FilterFeedTableViewCell.xib */; };
+		FDABA65020D9441900BFC818 /* FeedSectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64F20D9441900BFC818 /* FeedSectionTitleView.swift */; };
+		FDABA65220D9442200BFC818 /* FeedSectionTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDABA65120D9442200BFC818 /* FeedSectionTitleView.xib */; };
+		FDABA65920D949A600BFC818 /* FeaturedNewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA65820D949A600BFC818 /* FeaturedNewDetailViewController.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -94,6 +102,14 @@
 		FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskFormatter.swift; sourceTree = "<group>"; };
 		FDABA63F20D8C8E100BFC818 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		FDABA64120D8D2A400BFC818 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
+		FDABA64420D93BCA00BFC818 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FDABA64620D93DB600BFC818 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		FDABA64820D93EC600BFC818 /* FeedFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFilter.swift; sourceTree = "<group>"; };
+		FDABA64B20D9404700BFC818 /* FilterFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFeedTableViewCell.swift; sourceTree = "<group>"; };
+		FDABA64C20D9404700BFC818 /* FilterFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterFeedTableViewCell.xib; sourceTree = "<group>"; };
+		FDABA64F20D9441900BFC818 /* FeedSectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionTitleView.swift; sourceTree = "<group>"; };
+		FDABA65120D9442200BFC818 /* FeedSectionTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedSectionTitleView.xib; sourceTree = "<group>"; };
+		FDABA65820D949A600BFC818 /* FeaturedNewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedNewDetailViewController.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,6 +179,7 @@
 		FD38AEB820C1EBBB00BB932D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				FDABA64A20D9403600BFC818 /* Feed */,
 				FD38AED320C36F7400BB932D /* Form */,
 				FD38AED220C36F6600BB932D /* Profile */,
 			);
@@ -174,6 +191,8 @@
 			children = (
 				FD38AEBF20C1ED2400BB932D /* ProfileHeaderView.swift */,
 				FD38AEC120C1ED2C00BB932D /* ProfileHeaderView.xib */,
+				FDABA64F20D9441900BFC818 /* FeedSectionTitleView.swift */,
+				FDABA65120D9442200BFC818 /* FeedSectionTitleView.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -229,6 +248,7 @@
 			children = (
 				FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */,
 				FDABA63620D8BC1C00BFC818 /* LoginField.swift */,
+				FDABA64820D93EC600BFC818 /* FeedFilter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +267,7 @@
 		FD75E04020AB5AA900762B50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FDABA64320D93BBA00BFC818 /* Feed */,
 				FD38AECF20C36C3A00BB932D /* Authentication */,
 				FD38AECE20C36C2C00BB932D /* Profile */,
 			);
@@ -319,6 +340,25 @@
 			);
 			name = Protocol;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FDABA64320D93BBA00BFC818 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA64420D93BCA00BFC818 /* FeedViewController.swift */,
+				FDABA64620D93DB600BFC818 /* FeedViewModel.swift */,
+				FDABA65820D949A600BFC818 /* FeaturedNewDetailViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FDABA64A20D9403600BFC818 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA64B20D9404700BFC818 /* FilterFeedTableViewCell.swift */,
+				FDABA64C20D9404700BFC818 /* FilterFeedTableViewCell.xib */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		FDDA20322092A578008C932F = {
@@ -492,6 +532,7 @@
 				FDDA204C2092A57C008C932F /* LaunchScreen.storyboard in Resources */,
 				FD38AEB720C1944500BB932D /* Profile.storyboard in Resources */,
 				FDDA20492092A57C008C932F /* Assets.xcassets in Resources */,
+				FDABA64E20D9404700BFC818 /* FilterFeedTableViewCell.xib in Resources */,
 				FD38AEB520C193ED00BB932D /* Registration.storyboard in Resources */,
 				FD38AEBE20C1EC0200BB932D /* ProfileItemTableViewCell.xib in Resources */,
 				FD38AEAF20C193B000BB932D /* Feed.storyboard in Resources */,
@@ -500,6 +541,7 @@
 				FD38AEC220C1ED2C00BB932D /* ProfileHeaderView.xib in Resources */,
 				FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */,
 				FD38AECB20C3644500BB932D /* LogoutView.xib in Resources */,
+				FDABA65220D9442200BFC818 /* FeedSectionTitleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,14 +721,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */,
+				FDABA64D20D9404700BFC818 /* FilterFeedTableViewCell.swift in Sources */,
+				FDABA65020D9441900BFC818 /* FeedSectionTitleView.swift in Sources */,
 				FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */,
 				FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */,
 				FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */,
+				FDABA65920D949A600BFC818 /* FeaturedNewDetailViewController.swift in Sources */,
 				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
 				FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
+				FDABA64920D93EC600BFC818 /* FeedFilter.swift in Sources */,
+				FDABA64720D93DB600BFC818 /* FeedViewModel.swift in Sources */,
 				FDABA64220D8D2A400BFC818 /* FormValidator.swift in Sources */,
+				FDABA64520D93BCA00BFC818 /* FeedViewController.swift in Sources */,
 				FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */,
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
 				FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */,
