@@ -27,6 +27,7 @@
 		FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED020C36C4A00BB932D /* LoginViewController.swift */; };
 		FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */; };
 		FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */; };
+		FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63120D8B4F400BFC818 /* String+Extension.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -80,6 +81,7 @@
 		FD38AED020C36C4A00BB932D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
+		FDABA63120D8B4F400BFC818 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,13 +166,6 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		FD38AEBA20C1EBD300BB932D /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
 		FD38AEC720C3643000BB932D /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +222,6 @@
 			isa = PBXGroup;
 			children = (
 				FD38AEC720C3643000BB932D /* Footer */,
-				FD38AEBA20C1EBD300BB932D /* Custom */,
 				FD38AEB920C1EBC700BB932D /* Header */,
 				FD38AEB820C1EBBB00BB932D /* Cell */,
 				FD75E04120AB5AB300762B50 /* Storyboard */,
@@ -268,6 +262,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FDABA63020D8B4F400BFC818 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63120D8B4F400BFC818 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		FDDA20322092A578008C932F = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +295,7 @@
 		FDDA203D2092A578008C932F /* MatWebUnB */ = {
 			isa = PBXGroup;
 			children = (
+				FDABA63020D8B4F400BFC818 /* Extension */,
 				FDDA203E2092A578008C932F /* AppDelegate.swift */,
 				FD75E03E20AB5A9800762B50 /* Model */,
 				FD75E03F20AB5AA500762B50 /* View */,
@@ -632,6 +635,7 @@
 				FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */,
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
 				FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */,
+				FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */,
 				FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -809,7 +813,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -825,7 +832,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -842,7 +852,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -860,7 +874,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -877,7 +895,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -894,7 +916,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M368ZHZCHV;
 				INFOPLIST_FILE = MatWebUnBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IHC-UnB.MatWebUnBUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
