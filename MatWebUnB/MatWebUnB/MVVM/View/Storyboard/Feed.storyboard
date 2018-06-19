@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4SX-Z4-6ZH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4SX-Z4-6ZH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,17 +14,146 @@
         <!--Notícias-->
         <scene sceneID="Cl8-t2-cLP">
             <objects>
-                <viewController title="Notícias" id="4SX-Z4-6ZH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedViewController" title="Notícias" id="4SX-Z4-6ZH" customClass="FeedViewController" customModule="MatWebUnB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Evf-7R-Z2s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEU FEED" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-mp-hEK">
+                                <rect key="frame" x="40" y="80" width="89" height="79"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjt-mg-ubl">
+                                <rect key="frame" x="40" y="187" width="89" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="ySO-qV-3sA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6B-xf-OoU">
+                                <rect key="frame" x="189" y="60" width="206" height="587"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEDIDO DE MATRÍCULA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p16-KS-Efw">
+                                        <rect key="frame" x="20" y="20" width="166" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAG-Qq-Ec1">
+                                        <rect key="frame" x="20" y="107.5" width="166" height="248.5"/>
+                                        <string key="text">Para melhor desempenho da matrícula, o calendário da etapa de solicitação de ajuste foi dividido entre o aluno e o Coordenador. Lembramos que o processo de matrícula via internet - Portal do Aluno - será realizado no período de 18h de 19/02 até 18h do dia 18/03/2018. A matrícula junto aos Coordenadores de Curso de Graduação será realizada no período de 0h de 01/03 até 18h do dia 14/03/2018.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="p16-KS-Efw" firstAttribute="leading" secondItem="L6B-xf-OoU" secondAttribute="leading" constant="20" id="B0X-V8-2bn"/>
+                                    <constraint firstItem="JAG-Qq-Ec1" firstAttribute="leading" secondItem="L6B-xf-OoU" secondAttribute="leading" constant="20" id="Twt-Jv-MFf"/>
+                                    <constraint firstItem="JAG-Qq-Ec1" firstAttribute="top" secondItem="p16-KS-Efw" secondAttribute="bottom" constant="30" id="fRP-ef-0qE"/>
+                                    <constraint firstItem="p16-KS-Efw" firstAttribute="top" secondItem="L6B-xf-OoU" secondAttribute="top" constant="20" id="qsd-Kd-N8K"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Hgm-fC-Jhr">
+                                <rect key="frame" x="40" y="205" width="134" height="442"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4SX-Z4-6ZH" id="0tw-Ee-r7i"/>
+                                    <outlet property="delegate" destination="4SX-Z4-6ZH" id="7Nf-GD-VrK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L6B-xf-OoU" firstAttribute="top" secondItem="rLa-Yg-gwD" secondAttribute="top" constant="40" id="0tx-de-zXd"/>
+                            <constraint firstItem="Hgm-fC-Jhr" firstAttribute="top" secondItem="bjt-mg-ubl" secondAttribute="bottom" constant="16" id="2hk-En-4HQ"/>
+                            <constraint firstItem="L6B-xf-OoU" firstAttribute="width" secondItem="Evf-7R-Z2s" secondAttribute="width" multiplier="0.55" id="4fs-Qc-ljc"/>
+                            <constraint firstItem="L6B-xf-OoU" firstAttribute="leading" secondItem="Hgm-fC-Jhr" secondAttribute="trailing" constant="15" id="6rJ-c7-0Ep"/>
+                            <constraint firstItem="eGB-mp-hEK" firstAttribute="top" secondItem="p16-KS-Efw" secondAttribute="top" id="9KV-Ra-Wk8"/>
+                            <constraint firstItem="bjt-mg-ubl" firstAttribute="top" secondItem="eGB-mp-hEK" secondAttribute="bottom" constant="28" id="Hh4-xm-ICq"/>
+                            <constraint firstItem="bjt-mg-ubl" firstAttribute="leading" secondItem="eGB-mp-hEK" secondAttribute="leading" id="IB0-Fg-mZt"/>
+                            <constraint firstItem="rLa-Yg-gwD" firstAttribute="trailing" secondItem="JAG-Qq-Ec1" secondAttribute="trailing" id="L2g-Su-czZ"/>
+                            <constraint firstItem="L6B-xf-OoU" firstAttribute="leading" secondItem="eGB-mp-hEK" secondAttribute="trailing" constant="60" id="MQa-3N-NqL"/>
+                            <constraint firstItem="p16-KS-Efw" firstAttribute="trailing" secondItem="rLa-Yg-gwD" secondAttribute="trailing" id="Mxg-ic-PHe"/>
+                            <constraint firstItem="bjt-mg-ubl" firstAttribute="trailing" secondItem="eGB-mp-hEK" secondAttribute="trailing" id="bG5-pA-HNh"/>
+                            <constraint firstItem="Hgm-fC-Jhr" firstAttribute="bottom" secondItem="L6B-xf-OoU" secondAttribute="bottom" id="c2w-AX-lcR"/>
+                            <constraint firstItem="rLa-Yg-gwD" firstAttribute="bottom" secondItem="L6B-xf-OoU" secondAttribute="bottom" constant="20" id="efn-Bt-4j4"/>
+                            <constraint firstItem="eGB-mp-hEK" firstAttribute="leading" secondItem="rLa-Yg-gwD" secondAttribute="leading" constant="40" id="o9b-gA-7Jz"/>
+                            <constraint firstItem="Hgm-fC-Jhr" firstAttribute="leading" secondItem="rLa-Yg-gwD" secondAttribute="leading" constant="40" id="rft-Tv-VbD"/>
+                            <constraint firstItem="L6B-xf-OoU" firstAttribute="trailing" secondItem="rLa-Yg-gwD" secondAttribute="trailing" constant="20" id="u0H-ru-opT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rLa-Yg-gwD"/>
                     </view>
+                    <connections>
+                        <outlet property="featureNewTitleLabel" destination="p16-KS-Efw" id="AQy-CP-yNh"/>
+                        <outlet property="featuredNewUIView" destination="L6B-xf-OoU" id="m3X-7t-sCf"/>
+                        <outlet property="tableView" destination="Hgm-fC-Jhr" id="N2C-Gp-Xy0"/>
+                        <segue destination="eKO-92-qfM" kind="show" identifier="goToFeaturedNewDetails" id="JKI-Ej-fzM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0G-of-AF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111" y="10"/>
+            <point key="canvasLocation" x="109.59999999999999" y="9.4452773613193415"/>
+        </scene>
+        <!--Pedido de Matrícula-->
+        <scene sceneID="ZcO-4e-lvp">
+            <objects>
+                <viewController storyboardIdentifier="FeaturedNewDetailViewController" title="Pedido de Matrícula" hidesBottomBarWhenPushed="YES" id="eKO-92-qfM" customClass="FeaturedNewDetailViewController" customModule="MatWebUnB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J12-d2-06N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prezado(a) Aluno(a)," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pw-GB-K2l">
+                                <rect key="frame" x="20" y="60" width="246.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BBd-eA-TiL">
+                                <rect key="frame" x="20" y="109" width="335" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">A situação de Pré-Matriculado não garante a sua vaga na disciplina. Para efetivar a matrícula, acesse: matrícula + matrícula em disciplina para confirmar, retirar ou solicitar matrícula em disciplinas.
+
+Calouros somente poderão confirmar matrícula, as disciplinas não poderão ser recusadas e/ou incluídas e o semestre não poderá ser trancado. Casos excepcionais deverão ser analisados pela Coordenação do Curso.
+
+O(A) estudante deverá confirmar o interesse de permanecer na Lista de Espera de 0h de 26/02 até 18h do dia 27/2/2018. Caso a confirmação seja realizada, o(a) discente deverá acompanhar sua matrícula até dia 14/03/2018 (último dia de validade da Lista de Espera), pois a Coordenação do Curso poderá registrar a matrícula de acordo com o número de vagas disponíveis ao longo desse período. A não confirmação implicará na exclusão automática da Lista de Espera.
+
+Para melhor desempenho da matrícula, o calendário da etapa de solicitação de ajuste foi dividido entre o aluno e o Coordenador. Lembramos que o processo de matrícula via internet - Portal do Aluno - será realizado no período de 18h de 19/02 até 18h do dia 18/03/2018. A matrícula junto aos Coordenadores de Curso de Graduação será realizada no período de 0h de 01/03 até 18h do dia 14/03/2018. Secretaria de Administração Acadêmica SAA
+
+Centro de Informática CPD</mutableString>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o0a-J7-lTF" firstAttribute="trailing" secondItem="BBd-eA-TiL" secondAttribute="trailing" constant="20" id="0JP-ob-mA9"/>
+                            <constraint firstItem="5Pw-GB-K2l" firstAttribute="top" secondItem="o0a-J7-lTF" secondAttribute="top" constant="40" id="RVw-M0-nWX"/>
+                            <constraint firstItem="BBd-eA-TiL" firstAttribute="top" secondItem="5Pw-GB-K2l" secondAttribute="bottom" constant="20" id="az9-4K-EwG"/>
+                            <constraint firstItem="o0a-J7-lTF" firstAttribute="bottom" secondItem="BBd-eA-TiL" secondAttribute="bottom" constant="20" id="s3p-hT-9Yj"/>
+                            <constraint firstItem="BBd-eA-TiL" firstAttribute="leading" secondItem="o0a-J7-lTF" secondAttribute="leading" constant="20" id="tW5-US-gdH"/>
+                            <constraint firstItem="5Pw-GB-K2l" firstAttribute="leading" secondItem="o0a-J7-lTF" secondAttribute="leading" constant="20" id="vMy-FQ-9l8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o0a-J7-lTF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdJ-R3-76B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="9"/>
         </scene>
     </scenes>
 </document>
