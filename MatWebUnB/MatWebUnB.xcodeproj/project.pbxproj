@@ -23,6 +23,17 @@
 		FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */; };
 		FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AEC820C3643F00BB932D /* LogoutView.swift */; };
 		FD38AECB20C3644500BB932D /* LogoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AECA20C3644500BB932D /* LogoutView.xib */; };
+		FD38AECD20C368B300BB932D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38AECC20C368B300BB932D /* Authentication.storyboard */; };
+		FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED020C36C4A00BB932D /* LoginViewController.swift */; };
+		FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */; };
+		FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */; };
+		FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63120D8B4F400BFC818 /* String+Extension.swift */; };
+		FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63420D8B77300BFC818 /* LoginViewModel.swift */; };
+		FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63620D8BC1C00BFC818 /* LoginField.swift */; };
+		FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */; };
+		FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */; };
+		FDABA64020D8C8E100BFC818 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA63F20D8C8E100BFC818 /* Formatter.swift */; };
+		FDABA64220D8D2A400BFC818 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABA64120D8D2A400BFC818 /* FormValidator.swift */; };
 		FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA203E2092A578008C932F /* AppDelegate.swift */; };
 		FDDA20442092A578008C932F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA20422092A578008C932F /* Main.storyboard */; };
 		FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */; };
@@ -72,6 +83,17 @@
 		FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FD38AEC820C3643F00BB932D /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		FD38AECA20C3644500BB932D /* LogoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutView.xib; sourceTree = "<group>"; };
+		FD38AECC20C368B300BB932D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		FD38AED020C36C4A00BB932D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
+		FDABA63120D8B4F400BFC818 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FDABA63420D8B77300BFC818 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FDABA63620D8BC1C00BFC818 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldViewModel.swift; sourceTree = "<group>"; };
+		FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskFormatter.swift; sourceTree = "<group>"; };
+		FDABA63F20D8C8E100BFC818 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		FDABA64120D8D2A400BFC818 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 		FDDA203B2092A578008C932F /* MatWebUnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatWebUnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA203E2092A578008C932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA20432092A578008C932F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,8 +163,8 @@
 		FD38AEB820C1EBBB00BB932D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */,
-				FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */,
+				FD38AED320C36F7400BB932D /* Form */,
+				FD38AED220C36F6600BB932D /* Profile */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -156,13 +178,6 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		FD38AEBA20C1EBD300BB932D /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
 		FD38AEC720C3643000BB932D /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,10 +187,48 @@
 			path = Footer;
 			sourceTree = "<group>";
 		};
+		FD38AECE20C36C2C00BB932D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */,
+				FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD38AECF20C36C3A00BB932D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AED020C36C4A00BB932D /* LoginViewController.swift */,
+				FDABA63420D8B77300BFC818 /* LoginViewModel.swift */,
+				FDABA63820D8BC5C00BFC818 /* LoginFieldViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FD38AED220C36F6600BB932D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AEBB20C1EC0200BB932D /* ProfileItemTableViewCell.swift */,
+				FD38AEBC20C1EC0200BB932D /* ProfileItemTableViewCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD38AED320C36F7400BB932D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				FD38AED420C36F8A00BB932D /* FormTableViewCell.swift */,
+				FD38AED520C36F8A00BB932D /* FormTableViewCell.xib */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
 		FD75E03E20AB5A9800762B50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FDDA20452092A578008C932F /* MatWebUnB.xcdatamodeld */,
+				FDABA63620D8BC1C00BFC818 /* LoginField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				FD38AEC720C3643000BB932D /* Footer */,
-				FD38AEBA20C1EBD300BB932D /* Custom */,
 				FD38AEB920C1EBC700BB932D /* Header */,
 				FD38AEB820C1EBBB00BB932D /* Cell */,
 				FD75E04120AB5AB300762B50 /* Storyboard */,
@@ -195,8 +247,8 @@
 		FD75E04020AB5AA900762B50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FD38AEC320C1F4E000BB932D /* ProfileViewModel.swift */,
-				FD38AEC520C1F4ED00BB932D /* ProfileViewController.swift */,
+				FD38AECF20C36C3A00BB932D /* Authentication */,
+				FD38AECE20C36C2C00BB932D /* Profile */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +263,7 @@
 				FDDA204A2092A57C008C932F /* LaunchScreen.storyboard */,
 				FD38AEAE20C193B000BB932D /* Feed.storyboard */,
 				FD38AEB020C193C800BB932D /* Campus.storyboard */,
+				FD38AECC20C368B300BB932D /* Authentication.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -222,6 +275,50 @@
 				FDDA20482092A57C008C932F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FDABA63020D8B4F400BFC818 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63120D8B4F400BFC818 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FDABA63320D8B56E00BFC818 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				FD75E03E20AB5A9800762B50 /* Model */,
+				FD75E03F20AB5AA500762B50 /* View */,
+				FD75E04020AB5AA900762B50 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		FDABA63A20D8C6FB00BFC818 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63B20D8C70D00BFC818 /* Formatter */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FDABA63B20D8C70D00BFC818 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA63C20D8C74600BFC818 /* MaskFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		FDABA63E20D8C8C100BFC818 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FDABA64120D8D2A400BFC818 /* FormValidator.swift */,
+				FDABA63F20D8C8E100BFC818 /* Formatter.swift */,
+			);
+			name = Protocol;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FDDA20322092A578008C932F = {
@@ -250,9 +347,10 @@
 			isa = PBXGroup;
 			children = (
 				FDDA203E2092A578008C932F /* AppDelegate.swift */,
-				FD75E03E20AB5A9800762B50 /* Model */,
-				FD75E03F20AB5AA500762B50 /* View */,
-				FD75E04020AB5AA900762B50 /* ViewModel */,
+				FDABA63320D8B56E00BFC818 /* MVVM */,
+				FDABA63A20D8C6FB00BFC818 /* Util */,
+				FDABA63E20D8C8C100BFC818 /* Protocol */,
+				FDABA63020D8B4F400BFC818 /* Extension */,
 				FD75E04220AB5ACA00762B50 /* Resources */,
 			);
 			path = MatWebUnB;
@@ -389,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD38AECD20C368B300BB932D /* Authentication.storyboard in Resources */,
 				FD38AEB120C193C800BB932D /* Campus.storyboard in Resources */,
 				FDDA204C2092A57C008C932F /* LaunchScreen.storyboard in Resources */,
 				FD38AEB720C1944500BB932D /* Profile.storyboard in Resources */,
@@ -399,6 +498,7 @@
 				FD38AEB320C193D400BB932D /* Search.storyboard in Resources */,
 				FDDA20442092A578008C932F /* Main.storyboard in Resources */,
 				FD38AEC220C1ED2C00BB932D /* ProfileHeaderView.xib in Resources */,
+				FD38AED720C36F8A00BB932D /* FormTableViewCell.xib in Resources */,
 				FD38AECB20C3644500BB932D /* LogoutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,10 +656,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MatWebUnB/Pods-MatWebUnB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Quiver/Quiver.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMaskText/SwiftMaskText.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quiver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMaskText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,11 +679,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD38AEC620C1F4ED00BB932D /* ProfileViewController.swift in Sources */,
+				FD38AED620C36F8A00BB932D /* FormTableViewCell.swift in Sources */,
+				FDABA63D20D8C74600BFC818 /* MaskFormatter.swift in Sources */,
+				FDABA63520D8B77300BFC818 /* LoginViewModel.swift in Sources */,
 				FD38AEBD20C1EC0200BB932D /* ProfileItemTableViewCell.swift in Sources */,
+				FDABA63920D8BC5C00BFC818 /* LoginFieldViewModel.swift in Sources */,
 				FDDA20472092A578008C932F /* MatWebUnB.xcdatamodeld in Sources */,
 				FDDA203F2092A578008C932F /* AppDelegate.swift in Sources */,
+				FDABA64220D8D2A400BFC818 /* FormValidator.swift in Sources */,
+				FD38AED120C36C4A00BB932D /* LoginViewController.swift in Sources */,
 				FD38AEC020C1ED2400BB932D /* ProfileHeaderView.swift in Sources */,
+				FDABA63720D8BC1C00BFC818 /* LoginField.swift in Sources */,
 				FD38AEC920C3643F00BB932D /* LogoutView.swift in Sources */,
+				FDABA64020D8C8E100BFC818 /* Formatter.swift in Sources */,
+				FDABA63220D8B4F400BFC818 /* String+Extension.swift in Sources */,
 				FD38AEC420C1F4E000BB932D /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

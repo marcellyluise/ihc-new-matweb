@@ -1,4 +1,5 @@
 PODS:
+  - Quiver (1.1.0)
   - SwifterSwift (4.3.0):
     - SwifterSwift/AppKit (= 4.3.0)
     - SwifterSwift/CoreGraphics (= 4.3.0)
@@ -14,13 +15,18 @@ PODS:
   - SwifterSwift/MapKit (4.3.0)
   - SwifterSwift/SwiftStdlib (4.3.0)
   - SwifterSwift/UIKit (4.3.0)
+  - SwiftMaskText (1.0.5)
 
 DEPENDENCIES:
+  - Quiver
   - SwifterSwift
+  - SwiftMaskText
 
 SPEC CHECKSUMS:
+  Quiver: 2b7239901e81a5ad6302eb06ffaae34bddabb00e
   SwifterSwift: f3fce2b9fc5b9d8fda6eec33825e5243c60aebba
+  SwiftMaskText: d73c3a3a9f8b719f28b5c4f3ceef35fe5da5fd0f
 
-PODFILE CHECKSUM: e07c232e3a7af1ad460481c2d06ee9b5778b0539
+PODFILE CHECKSUM: 7dc561b6105bb0a639b5ca2ce32baeeae950ed7a
 
 COCOAPODS: 1.4.0
